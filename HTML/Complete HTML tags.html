@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://ph-files.imgix.net/e4f20412-0e90-4479-a109-87a913f10da6.png?auto=format&auto=compress&codec=mozjpeg&cs=strip />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML</title>
+    <!--This is internal css-->
+    <style> 
+        .bgColor{
+            background-color: rgb(184, 229, 238);
+            border-bottom-right-radius: 4px; 
+            border-top-left-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <h2> Complete HTML </h2>
+    </fieldset>
+    <fieldset>
+        <legend> <strong> Class 1 </strong> </legend>
+        <strong> This is basic content of my HTML file </strong> <br>
+        body= Yaha content hota hai <br>
+        <strong>The basic structure of HTML</strong><br>
+        &lt;html&gt; <br>
+        &lt;head&gt;<br>
+        &lt;title&gt;Document &lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        Content here <br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <strong> Class 2 (tut4) </strong></legend>
+        <h4>This class is for basic of head tag and adding CSS and JS file</h4>
+        <link rel="stylesheet" href="harry.css">
+        <script src="harry.js"></script> <br>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <strong>Class 3 (tut5)</strong> </legend>
+        <strong> This program is for studying Heads & Paragraphs</strong> <br>
+        Size of heading tags h1&gt;h2&gt;h3&gt;h4&gt;h5&gt;h6 <br>
+        <p>This is paragrahp</p>
+        This is generated using Emmet type lorem*4 to generate 4 random words<br>
+        <strong>This is Bold text using strong tag</strong><br>
+        <em>This is Emphasize using em tag</em><br>
+        <b>This is Bold text using b tag</b><br>
+        <i>This is ITALIC text using i tag</i><br>
+        Below is horizontal line using hr tag
+        <hr>
+    </fieldset>
+    
+
+    <fieldset>
+        <legend> <strong> Class 4 (tut6) </strong> </legend>
+        <strong> This program is for adding images and links in webpage</strong> <br>
+        To add link in webpage and it will open in new tab <a href="https:google.com" target="_blank">Go to Google</a>
+        <br>
+        <img src="a.jpeg" alt="Error in loading image" height="50" width="450"><br>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <b> Class 5 (tut7) </b></legend>
+        <b> This is for using lists and tables in HTML</b> <br>
+        <strong>This is unordered list in HTML</strong> <br>
+        <ul type="square">
+            <li>This is first item in unordered list</li>
+            <li>This is first item in unordered list</li>
+        </ul>
+        <strong>This is odered list in HTML</strong>
+        <ol type="I">
+            <li>This is first item of ordered list</li>
+            <li>This is second item of oredered list</li>
+        </ol>
+        <strong>This is tabel in HTML</strong>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sagar</td>
+                    <td>123</td>
+                    <td>Full Stack Dev</td>
+                </tr>
+                <tr>
+                    <td>Jayesh</td>
+                    <td>124</td>
+                    <td>Civil Architec</td>
+                </tr>
+                <tr>
+                    <td>Rahul</td>
+                    <td>125</td>
+                    <td>Android Dev</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend><strong> Class 6 (tut8)</strong> </legend>
+        <strong> This program is for studying FORMS</strong>
+        <fieldset>
+            <legend>This is Basic Form in HTML</legend>
+            <h4>Company LogIn form</h4>
+            <form action="backend.php">
+                <div>
+                    <label for="name">Enter your Name:-</label> <input type="text" name="myName" id="name" placeholder="Enter Name" class="bgColor">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Enter your Email:-</label> <input type="email" name="myEmail" id="email" placeholder="Enter Email" class="bgColor">
+                </div>
+                <br>
+                <div>
+                    <label for="number">Enter your ID:-</label> <input type="number" name="myNumber" id="number" placeholder="Enter ID" class="bgColor">
+                </div>
+                <br>
+                <div>
+                    <label for="date">Enter your birth date:-</label> <input type="date" name="myDate" id="date">
+                </div>
+                <div>
+                    <label for="check">Are you eligible:-</label> <input type="checkbox" name="myCheck" id="check"
+                        checked>
+                </div>
+                <div>
+                    Enter your gender:- Male <input type="radio" name="myGender"> Female<input type="radio"
+                        name="myGender">
+                    Other<input type="radio" name="myGender">
+                </div>
+                <div>
+                    <label for="car">Enter your car:-</label>
+                    <select name="myCra" id="car">
+                        <option value="F1">F1</option>
+                        <option value="lam" selected>Lambourghini</option>
+                        <option value="fer">Ferrari</option>
+                        <option value="Mer">Mercedes</option>
+                        <option value="Mar">Maruti</option>
+                        <option value="Hyu">Hyundai</option>
+                        <option value="Jag">Jaguar</option>
+                    </select>
+                </div>
+                <br/>
+                <div>
+                    <label for="pass">Enter Password:- </label><input type="password" name="passWord" id="pass" placeholder="Enter Password" class="bgColor">
+                </div>
+                <br>
+                <div>
+                    <label for="textarea">FeedBack</label><br>
+                        <textarea id="textarea" class="bgColor" row="50" cols="50"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit Here"> <input type="reset" value="Reset Now">
+                </div>
+                
+            </form>
+        </fieldset>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <strong> Class 7 (tut9)</strong> </legend>
+        <strong> This program is to study Inline and block elements</strong> <br>
+        Block elements occupy complete and whereas Inline elements only occupy that particular space <br>
+        Block tags are:- <strong> &lt;p&gt; ,&lt;div&gt;, &lt;ul&gt; ,&lt;ol&gt;, &lt;img&gt;</strong> <br>
+        Inline Elements are:- <strong> &lt;span&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;a&gt; </strong><br>
+        <p style="border: 2px solid red;">This is block Element</p>
+        <span style="border: 2px solid red;">This is first inlinne element</span> <span
+            style="border: 2px solid red;">This
+            is second inline element</span>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <b> Class 8 (tut10)</b> </legend>
+        <b>This program is to study Ids and Classes in HTML</b> <br>
+        <strong>ID is identifier such as name of particular person and it can not be repeated and it is specifically
+            used
+            once for particual element in program</strong> <br>
+        <strong>Class is group of similar type of species ex.- Humans, classes can be used of multiple time in
+            particular
+            element. And similar classes used for multiple elements</strong>
+        <br>
+        <!-- Emmet -->
+        <!-- . is for class and # is for id-->
+        <div id="mainBox" class="redBg blackBorder">
+            This is mainbox
+        </div>
+        <span class="redBg blackBorder">This is span for multiple classes</span> <br>
+        <span id="mainBB">This is span for particula ID</span>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <b> Class 9 (tut11)</b> </legend>
+        <b>This program for HTML Entities</b> <br>
+        <strong>HTML Entities are special symbols such as space-nbsp ; , copywrite-&copy; ,pound-&pound; , angle
+            brackets-
+            &lt; &gt; </strong> <br>
+        HTML entities can be easily access from internet <br>
+        <strong>Some HTML Entities are given in table below</strong> <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Symbol</th>
+                    <th>Write in HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spacebar</td>
+                    <td>noraml space</td>
+                    <td>& nbsp ;</td>
+                </tr>
+                <tr>
+                    <td>Copywrite</td>
+                    <td>&copy;</td>
+                    <td>& copy ;</td>
+                </tr>
+                <tr>
+                    <td>Pound</td>
+                    <td>&pound;</td>
+                    <td>& pound ;</td>
+                </tr>
+                <tr>
+                    <td>Angel bracket</td>
+                    <td>&lt;</td>
+                    <td>& lt ;</td>
+                </tr>
+                <tr>
+                    <td>Angel bracket</td>
+                    <td>&gt;</td>
+                    <td>& gt ;</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <hr>
+
+    <fieldset>
+        <legend> <b> Class 10 (tut12)</b> </legend>
+        <b>This program is for HTML Semantic tags</b> <br>
+        Semantic is meaning of particular word <br>
+        It is kind of question answer type and in which answer is hidden <br>
+        <details>
+            <summary>I have keys but no door.I have space but no rooms.You can enter but can't leave. What am I?
+            </summary>
+            A Keybord
+        </details>
+        <details>
+            <summary>What is name of star programmer who write this complete code?</label></summary>
+            Sagar Ashok Akhade
+        </details>
+        <details>
+            <summary>You can write quetions here and anwers are hidden Click HERE to get answer</summary>
+            HERE is Answer
+        </details>
+    </fieldset>
+    <hr>
+    <hr>
+    <fieldset>
+        <h2 type="text">End Of Document</h2>
+    </fieldset>
+
+</body>
+
+</html>
