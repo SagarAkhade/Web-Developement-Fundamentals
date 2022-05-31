@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This program is to study the Types of selectors  -->
+<!-- Type of Selector are 1. Element Selector 2.ID selector 3.Class selector 4.Group Selector  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!-- # is used for particular ID. And . is used for particular classes. Here we use #firstPara to target particular ID. And .bgBlue for targeting particular class -->
+
+    <!-- Internal CSS -->
+    <style>
+        /* This is comment in CSS   */
+        /* This is Element Selector */
+        p {
+            border: 2px solid red;
+        }
+
+        /* This is ID Selector */
+        #firstPara {
+            color: red;
+        }
+
+        /* This is Class Selector */
+        .bgBlue {
+            color: yellow;
+            background-color: blue;
+        }
+
+        /* This is Group Selector */
+        footer, span {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selector</h3>
+    <p id="firstPara">This is simple paragraph to demonstrate CSS Selectors</p>
+    <p id="secondPara" class="redElement bgBlue">This is another simple paragraph to demonstrate CSS Selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate CSS Selectors</p>
+    </div>
+    <span>This is span</span>
+    <footer>This is Footer</footer>
+</body>
+</html>
