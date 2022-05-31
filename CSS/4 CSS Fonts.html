@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- This program is to study CSS Fonts -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <!-- This below link is added to get font style from Web  -->
+    <!-- Type google fonts in internet and paste link above style tag and add name in font family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* font family is different types of fonts and some are already install in our system called WEB SAVE fonts */
+        /* Some font family is taken from Internet called WEB  */
+
+        /* This is web save font  */
+        .first{
+            font-family: cursive;
+        }
+
+        /* This is font stags that is it take preference from left to right "called as Font Stack" */
+        .second{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* This is font from web  */
+        .third{
+            font-family: 'Ubuntu','Courier New', Courier, monospace;
+        }
+
+        /* font-size is used to give size for fonts  */
+        /* line-height is given for line spacing  */
+        
+        .first, .second, .third{
+            font-size: 20px;          /*1 pxel= 1/96th of inch */
+            line-height: 1em;      
+        }
+        /* font weight is used for making it bold */
+        /* font style is used to give various style to font  */
+        span{
+            font-weight: bold;
+            font-style:italic;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Fonts</h2>
+    <p class="first">Lets play with fonts. It very exciting</p>
+    <p class="second">This is for font stags</p>
+    <p class="third">This is font from web </p>
+    <p>This is another line to get <span>BOLD</span> </p>
+</body>
+</html>
