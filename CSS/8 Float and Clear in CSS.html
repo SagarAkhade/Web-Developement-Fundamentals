@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- This program for Float and clear -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment in CSS</title>
+    <style>
+        /* box-siszing: border box; --> makes our content properly fits in given margins */
+        /* * is used as universal selector */
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family:Arial, sans-serif;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;         /*margin: auto; makes it content to the center*/
+            background-color: rgb(243, 226, 212);
+        }
+        .item{
+            border: 3px solid grey;
+            margin: 3px 3px;
+            padding: 12px 3px;
+            background: rgb(244, 195, 195);
+            border-radius: 10px;
+
+        }
+        /* float tag makes the content in proper align */
+        #fruit{
+            float: left;
+            width: 49%;
+        }
+        #computer{
+            float: right;
+            width: 49%;
+        }
+        #stationary{
+            /* clear: left; tag is used for not allowing any float on its left and it will get removed. Similar for right also. We also have clear: both; for not allowing any side either */
+            clear: both;
+        }
+        p, h3{
+            /* text-align: right; tag is used to align the text of content  */
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+            margin: 20px ;
+            padding: 5px;
+            border: 7px solid red;
+            border-radius: 20px;
+            font-style: oblique;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet unde fugiat similique quaerat deleniti esse hic magni quia, ipsam vel eos deserunt adipisci quas ratione sapiente consequuntur voluptatum laudantium.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas saepe nulla vel fugiat pariatur officia ducimus sed ipsa, ipsam aspernatur qui, quod soluta odio voluptatum vero exercitationem molestias dolore!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet unde fugiat similique quaerat deleniti esse hic magni quia, ipsam vel eos deserunt adipisci quas ratione sapiente consequuntur voluptatum laudantium.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum amet unde fugiat similique quaerat deleniti esse hic magni quia, ipsam vel eos deserunt adipisci quas ratione sapiente consequuntur voluptatum laudantium.</p>
+        </div>
+    </div>
+</body>
+</html>
