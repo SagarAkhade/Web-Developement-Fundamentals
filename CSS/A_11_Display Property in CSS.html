@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSDisplay Property</title>
+    <title>CSS Display Property</title>
     <style>
+        /* box-sizing: border-box; -> The width and height properties (and min/max properties) includes content, padding and border  */
         *{
             box-sizing: border-box;
         }
         header{
-            border: 2px solid red;
+            border: 5px solid red;
             margin: auto;
             width: 100%;
         }
-        /* display: block;-> will help us to make center in block elements
-         display: inline;-> will take space of complete element*/
+        /* display: block;-> Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width
+
+        display: inline;-> Displays an element as an inline element (like <span>).Any height and width properties will have no effect
+         
+        display: inline-block; -> Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+        */
         img{
             margin: auto;
             width: 34px;
@@ -34,7 +39,6 @@
             padding: 23px;
             width: 33%;
             box-sizing: border-box;
-            /* display: inline-block; -> will make block elements to inline elements  */
             display: inline-block;
         }
         .container{
