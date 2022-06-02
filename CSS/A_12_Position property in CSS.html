@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- This program is about Position absolute, relative, fixed and sticky in CSS  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        /* Revision Notes ;) 
+        display: inline-block; -> will make element into inline element and inculding all borders, margin, padding
+        
+        display: inline -> will make element into inline element not include boders, margin and padding
+        
+        display: block -> will make element into block element
+        */
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+        .box{
+            margin: 2px;
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            
+        }
+        /* CSS Posititon : static(default), relative, absolute, fixed, sticky.
+        CSS position is used to create blocks like chat with us block, contact us block 
+        */
+        #box3{
+        /* position: relative -> means relative to its normal position and will leave a gap at its normal position*/
+        /* top: 34px;
+        left: 42px; */
+        /* position: absolute -> means relative to its first parent position */
+        /* top: 34px;
+        left: 42px; */
+        /* position: fixed -> means position relative to browser window. means fixed the position of block and doesnot affect by scrolling it will still displayed 
+            position: fixed;
+            right: 10px;
+            bottom: 2px; */
+        /* position: sticky -> means position relative to browser window. means fixed the position of block and doesnot affect by scrolling it will still displayed and it will apply only on top-left-right position 
+            position: sticky;
+            right: 10px;
+            bottom: 2px; */
+        position: sticky;
+        top: 3px;
+        }
+        #box4{
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
