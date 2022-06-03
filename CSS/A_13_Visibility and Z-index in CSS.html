@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- This program is for Visibility and z-index in CSS  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* Z-index: will work only for position: relative, absolute, fixed or sticky but it will not work with static  */
+        /* z-index:34; is just used for which element will be up or which element will be down. Max value of z-index will come up over others */
+        #box-1{
+            position: relative;
+            top: 49px;
+            background-color: green;
+            z-index: 35;
+        }
+        /* visibility: hidden;-> will hide the element but will show its empty space ->its by default value is visible -> */
+        /* display: none; -> will hide the element and space */
+        #box-2{
+            position: relative;
+            top: 14px;
+            z-index: -1;
+            /* visibility: hidden;
+            display: none; */
+            background-color: red;
+        }
+        #box-3{background-color: blue;}
+        #box-4{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <!-- Emmet used 
+    div.box#box$*4 -> $*4->will create four numbers starting from 1 -->
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>
