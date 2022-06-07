@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- This program for making Responsive designs using CSS  -->
+<!-- Size units -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* width: 400px; */
+            /* height: 300px; */
+            height: 100vh; /*100vh -> it will take all 100% height. h-height. It is like percentage */
+            width: 100vw; /*100vw -> it will take all 100% width. w-width. It is like percentage */
+            font-size: 10px;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* em unit -> is just used to make site more responsive. And it is just an multiple of its parent. It depends on parent element */
+            /* font-size: 3em;
+            padding: 3em; */
+        }
+        #second{
+            /* rem unit -> It is prefferd over em. It is just used to make site more responsive. And it is just resize itself according to root element and multiple of it. It depends on complete HTML file */
+            /* font-size: 3rem;
+            padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>
