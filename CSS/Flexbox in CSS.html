@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- This program is for Flexbox in CSS  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        /* display: flex;-> is used to align elements properly */
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the container as a flex box  */
+            display: flex;
+            
+            /* Flex properties for flex container  */
+            /* flex-direction: row; this is default property of flex-direction */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            
+            
+            /* flex-wrap: wrap;-> will make the  content to be adjusted in divice sizes. Its default value is nowrap */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* Short hand of flex-direction and flex-wrap  */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify tag makes the content of container in horizontal direction  */
+            /* justify-content: center;-> will make the content to center and likewise other properties are given below. */
+             /* justify-content: center; */
+            /* justify-content: space-between; -> will make space between two boxes except last two
+            justify-content: space-evenly; -> make space between all the boxes including first and last
+            justify-content: space-around; -> Items will have space before, between, and after them */
+
+            /* Align tag aligns the content */
+            /* align-items: center; -> will make it to the centre position on Y-axis */
+            /* align-items: flex-end;-> will  move the content to buttom*/
+            /* align-items: center; 
+            align-items: flex-end;
+            align-items: flex-start;  // align-items: flex-start; -> is default  */
+            /* align-items: stretch; -> makes the content to evenly distribute in container */
+            /* align-items: stretch; */
+
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        /* Flex properties for flex item  */
+        #item-1{
+            /* order: 2; -> used to give ranking positions to the items. Higher the order item will go last */
+            /* order: 2; */
+
+            /* flex-grow: 2; -> will use to make items of container goes bigger when it gets the space(i.e when zoom in/out). Higher the number it will grow larger. In flex-grow, negative numbers are invalid */
+            /* flex-grow: 2;  */
+
+            /* flex-shrink: 2; -> will use to make items of container goes smaller(shrink) when it gets the space(i.e when zoom in/out). Higher the number it will shrink larger.*/
+            /* flex-shrink: 2; */
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+
+            /* flex-basis:320px; -> use to increase height or width depends on flex-direction of main container. 
+            when flex-direction is set to row, flex-basis: will control width.
+            when flex-direction is set to column, flex-basis: will control height. */
+            flex-basis: 160px;
+        }
+        #item-3{
+            /* flex: 2 2 200px; -> This is shorthand of flex i.e. -> flex: grow-shrink-basis */
+            /* flex: 2 2 200px; */
+
+            /* align-self: -> propety used to align boxes in container */
+            align-self: flex-start; /*align-self: flex-start; -> align the box to start of container */
+            align-self: flex-end; /*align-self: flex-end; -> align the box to end of container(i.e. at bottom)*/
+            align-self: center; /*align-self: center; -> align the box to center of container*/
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+    </div>
+</body>
+</html>
