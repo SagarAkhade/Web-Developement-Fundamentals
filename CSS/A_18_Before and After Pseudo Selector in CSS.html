@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- This program for Before and After Pseudo Selector in CSS  -->
+<html lang="en">
+<head>
+    <!-- for font style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        /* This is Before Pseudo Selector  */
+        header::before{
+            content: "";
+            background: url('https://picsum.photos/200/300?random') no-repeat center center/ cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* opacity: 0.5; -> This property will make the background image light so that we see content clearly */
+            opacity: 0.5;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+            font-family: 'Bree Serif', serif;
+        }
+        section{
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            /* flex-direction: row; -> This is default value */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid red; */
+            font-family: 'Bree Serif', serif;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* This is Before Pseudo Selector */
+        section::before{
+            content: "this is a content Before";
+        }
+         /* This is After Pseudo Selector */
+         section::after{
+            content: "this is a content After";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis asperiores pariatur accusamus voluptatibus deserunt eum sit earum. Nostrum provident repellendus ab deserunt iusto reiciendis saepe? Sunt consectetur voluptas dolor recusandae maiores minima inventore perferendis!</p>
+    </section>
+</body>
+</html>
