@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- This program is for Box shadow and text shadow in CSS  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        /* display: flex; -> property is used to align content in boxes */
+        .container{
+            display: flex;
+        }
+        
+        /* box-shadow  */
+        /* box-shadow: 10px 13px green; -> will give shadow to right and bottom */
+        /* box-shadow: -10px -13px green; -> will give shadow to left and top. we used negative values here */
+        /* box-shadow: 10px 13px 10px green; -> will give blur radius(10px at last)  */
+        /* box-shadow: 10px 13px 10px 34px green; ->  will give spread radius(34px at last) i.e. from all sides */
+        /* box-shadow: inset 3px 5px green; -> inset used to make shadow increased inside the box */
+        /* box-shadow: 10px 13px green, 15px 15px red;  -> will used to give multiple shadows on single box */
+
+        /* Short hands for box-shadow :
+        box-shadow: offset-x offset-y color;
+        box-shadow: offset-x offset-y blur-radius color;
+        box-shadow: offset-x offset-y blur-radius spread-radius color;
+        */
+
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            box-shadow: 10px 13px green;  
+            box-shadow: -10px -13px green; 
+            box-shadow: 10px 13px 10px green;  
+            box-shadow: 10px 13px 10px 34px green;  
+            /* here we use rgba color -> that alpha value will take care of how dark or faint color we want */
+            box-shadow: 10px 13px 10px 34px rgba(25, 120, 120, 0.5); 
+            box-shadow: inset 3px 5px green;
+            box-shadow: 10px 13px green, 15px 20px red;   
+        }
+
+        /* tex-shadow */
+        /* text-shadow is used when we want to highlight our text on images  */
+        /* tex-shadow -> will same properties as box-shadow */
+        /* text-shadow: 3px 4px red; -> will give shadow to text */
+        .card h2{
+            text-shadow: 3px 4px red;
+            text-shadow: 3px 4px 2px red;
+            text-shadow: -3px -4px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, deserunt eum fugiat libero praesentium, impedit debitis quas pariatur accusantium esse vitae ratione error a, vero laborum dolore dicta ut modi officia porro aliquid laudantium.</p> 
+        </div>
+
+        <div class="card" id="card-2">
+            <h2> This is HTML course  </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, deserunt eum fugiat libero praesentium, impedit debitis quas pariatur accusantium esse vitae ratione error a, vero laborum dolore dicta ut modi officia porro aliquid laudantium.</p> 
+        </div>
+
+        <div class="card" id="card-3">
+            <h2> This is Java Course  </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, deserunt eum fugiat libero praesentium, impedit debitis quas pariatur accusantium esse vitae ratione error a, vero laborum dolore dicta ut modi officia porro aliquid laudantium.</p> 
+        </div>
+    </div>
+</body>
+</html>
