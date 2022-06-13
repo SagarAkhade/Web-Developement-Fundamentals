@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- This program is for CSS variables and Custom Properties in CSS  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables / Custom Properties</title>
+    <style>
+        /* in root we can define the variables and these can be used in all page */
+        /* variable in CSS are created like this
+        --variableName: property; -> and access as
+        width: var(--maxw); */
+        :root{
+            --primary-color: blue;
+            --danger-color: red; 
+            --maxw: 333px;
+        }
+
+        /*--primary-color: blue; -> this is defining the variable. And when we define it in particular element is accesible by only this element */
+        .box {
+            /* --primary-color: blue; /*Defining the variable*/
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color); 
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+            /* --primary-color: violet; */
+            display: flex;
+            background-color: var(--primary-color);
+            align-items: center;
+            justify-content: center;
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
