@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- This program is for Auto-fit and MinMax Grid in CSS -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        /* 
+        display: grid; -> initializing the grid 
+        grid-gap: 1rem; -> will give gap between all boxes
+        grid-template-columns:  repeat(3, 1fr); -> will create 3 columns 
+        justify-content: center; -> will make the boxes to center same we done in flexbox
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); -> minmax(min-value, max-value)->use to make for responsive website
+        */
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* justify-content: center; */
+        }
+        .box{
+            border: 2px solid black;
+            background-color: rgb(218, 168, 93);
+            padding: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div>
+        <div class="box">item-12</div>
+        <div class="box">item-13</div>
+    </div>
+</body>
+</html>
