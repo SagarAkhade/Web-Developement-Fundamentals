@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- This program for Transforms in CSS -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        /* transform  */
+        /* transform: rotate(45deg); -> will rotate the box 
+        transform: skew(40deg); -> will make it rhombus like with 45 deg angle 
+        transform: scale(3); -> will make box 3 times larger the original
+        transform: translateX(123px); -> will make the box translate(move) in x-direction same for y-direction 
+        transform: translate(123px, 123px); -> will make the box translate(move) in x-direction and y-direction both simultaneously */
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            /* transform: rotate(45deg); this is used to rotate the box by 45 deg */
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            /* transform: rotate(360deg); /*will rotate the box 360deg */
+            /* transform: skew(40deg); /* will make it like rhombus */
+            transform: scale(2); /*will make box 2 times larger the original*/
+            /* transform: translateX(123px); */ /*will make the box translate(move) in x-direction same for y-direction */
+            /* transform: translateY(123px); */
+            transform: translate(123px, 123px); /*will make the box translate(move) in x-direction and y-direction both simultaneously */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>
