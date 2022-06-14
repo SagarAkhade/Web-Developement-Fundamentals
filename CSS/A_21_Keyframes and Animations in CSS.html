@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- This program is for Keyframes and Animations in CSS -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        /* animation-name: harry1; -> to initialize the animation property
+        animation-duration: 2s; -> it is duration of time the animation run
+        animation-iteration-count: 3; -> used for number of times the animation will run. Here we can use infinte to continously run without stop 
+        animation-fill-mode: alternate; -> make animations operations. Also have property as forwards
+        animation-timing-function: ease-in; -> we controls the flow of animation. Here with ease-in it run slow in starting and then fast.
+        Also have ease-out, ease-in-out
+        animation-delay: 3s; -> used to delay animation by 3s here 
+        animation-direction: alternate; -> used to give direction to animation. Also have attribute reverse to run in reverse order 
+        */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; -> this is shorthand of animation  */
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: harry2; /*just change name to access harry1 */
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /*Shorthand of Animations */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: harry 5s ease-in 1s  12 alternate backwards; */
+        }
+
+        /* @keyframes harry1(here is animation name written){from{}to{}} -> we need to create animation like this */
+        @keyframes harry1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1400px;
+            }
+        }
+        /* Another way of using Animations -> according to percentage of completion */
+        @keyframes harry2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+
+</html>
