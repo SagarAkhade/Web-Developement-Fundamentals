@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- This program is for details about Grid in CSS  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        /* Grid */
+        /* display: grid; -> initialize the display grid. Used for proper alignment
+        grid-template-rows: 1fr 1fr 4fr; -> will align items in row vice fashion. fr-fraction 
+        grid-auto-rows: 2fr; -> will gives default value 3fr to all remaining boxes
+        grid-template-columns: 1fr 4fr 2fr; -> for creating columns
+        grid-template-columns: repeat(4, 2fr); -> shord hand for creating grid columns (4 columns)
+        grid-gap: 1rem; -> will give spacing between items(this property removed from HTML5 now but works fine) */
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            grid-template-columns: 1fr 4fr 2fr;
+            grid-template-columns: repeat(4, 2fr);
+            grid-gap: 1rem;
+        }
+        .box{
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Emmet used here 
+    div.box{This is box-$}*10 -->
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>
