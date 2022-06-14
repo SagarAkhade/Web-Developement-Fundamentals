@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- This program for Grid in CSS  -->
+<!-- Grid is similar as flexbox but only difference is that grid are used for 2-dimensional designs(layouts) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorials</title>
+    <style>
+        /* Grid  */
+        /* display: grid; -> We initialize our grid here 
+        grid-template-columns: 300px 100px 100px; -> will make 3 columns with corresponding values
+        grid-template-columns: 300px auto 100px; -> will make 3 columns and 2nd column will take auto size
+        grid-template-columns: 1fr 4fr 1fr; -> will divide the column according to screen size 
+        grid-template-columns: repeat(3, auto); -> this is shorthand of making columns in easy way adjusting the width auto
+        grid-gap: 2rem; -> will create gap between
+        grids  */
+
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 2rem; 
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: red;
+            padding: 15px 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Emmet used here ;)
+        div.item{This is Item-$}*9  -->
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>
