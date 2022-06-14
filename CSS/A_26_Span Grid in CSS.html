@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- This program is for Spanning in CSS Grid -->
+<!-- Spanning -> is merging two or more cells in one   -->
+<!-- Grid and flex both are same depends on devloper and One thing always consider that it must be User Friendly  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        /* Grid  */
+        /* 
+        display: grid; -> initializing the grid .
+        grid-template-columns: repeat(5, 1fr); -> creating columns 
+        grid-template-rows: repeat(4, 1fr); -> creating rows
+        grid-column-gap: 2rem; -> give gap in column only 
+        grid-row-gap: 2rem; -> give gap in row only 
+        grid-gap: 1rem; -> gives gap from all sides 
+        */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-column-gap: 7rem;
+            grid-row-gap: 1rem; */
+            grid-gap: 1rem;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: rgb(192, 111, 192);
+            padding: 23px;
+        }
+        
+        /* .box:first-child{} -> this is first child pseudo selector  */
+        /* Merging Grids */
+        /*
+        grid-column-start: 1;  -> here we initialize starting point for merging grid column vice 
+        grid-column-end: 3; -> here we terminating merging grid column vice -> consider they are lines 
+        grid-row-start: 1;  -> here we initialize starting point for merging grid row vice 
+        grid-row-end: 3; -> here we terminating merging grid row vice -> consider they are lines 
+        Short hand of span-> I reffer this below 
+        grid-column: 1 / span 3; -> Shorthand merge 3 columns
+        grid-row: 1 / span 3; -> Shorthand merge 3 rows
+        */
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>        
+    </div>
+</body>
+</html>
