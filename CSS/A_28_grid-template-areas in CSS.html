@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- This program is for Template areas in Grid in CSS -->
+<!-- grid-template-areas -> used for creating responsive layouts -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        /* Grid template areas */
+        /*
+        display: grid; -> initializing the grid
+        grid-gap: 1rem; -> used for giving spaces between boxes 
+        grid-template-areas:   ->use for creating wbsite layout it will creating 3rows and 4cols as below
+        'navbar navbar navbar navbar'  -> navbar will take 4cols
+        'section section section aside' -> section will take 3cols and aside will take 1cols
+        'footer footer footer footer' -> footer will take 4cols
+        ;
+         */
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:    /* !Important */
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+
+        /* 
+        grid-area: navbar; -> giving name to grid area
+         */
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Emmet used here
+    div.item{Item-$}*14  -->
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae quod error, quam nisi aspernatur labore perspiciatis exercitationem est aliquam eum in nam ex quia aut nostrum. Minus totam rem aperiam laudantium impedit iusto ipsam enim porro? Perferendis mollitia temporibus corporis consectetur, accusantium nesciunt cumque minima? Totam odio sapiente illum ut.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestias quia mollitia. Exercitationem tempore ab, consectetur commodi fugiat molestias dolorum.
+        </div>
+        <footer class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sed maxime quae.</footer>
+    </div>
+</body>
+</html>
