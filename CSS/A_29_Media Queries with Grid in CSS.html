@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- This program is for Media Queries with CSS Grid  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries </title>
+    <style>
+        /* Grid */
+        /*
+        display: grid; -> initializing the grid box
+        grid-gap: 1rem; -> used for giving spaces between boxes  
+        grid-template-areas:   ->use for creating wbsite layout it will creating 3rows and 4cols as below
+        'navbar navbar navbar navbar'  -> navbar will take 4cols
+        'section section section aside' -> section will take 3cols and aside will take 1cols
+        'footer footer footer footer' -> footer will take 4cols
+        ;
+         */
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:    /* !Important */
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+        }
+
+        /* 
+        grid-area: navbar; -> giving name to grid area
+         */
+        nav{
+            grid-area: navbar;
+        }
+        section {
+            grid-area: section;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        .bdr {
+            padding-top: 10px;
+            border: 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+        }
+
+        /* Media Queries  */
+        /* Media Queries are used to make websites more responsive */
+        /* 
+        @media only screen and (min-width:300px) and (max-width:500px){apply properties here} -> basic syntax for media queries 
+         */
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                grid-template-areas: /* !Important */
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                grid-template-areas:    /* !Important */
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas: /* !Important */
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside '
+                    'footer footer footer footer'
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>      
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aperiam voluptas animi fugit iusto maiores aliquid delectus nostrum fugiat, fuga amet quis?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright Sagar 2022</footer>
+</body>
+</html>
