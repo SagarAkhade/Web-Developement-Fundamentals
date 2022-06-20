@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- This is program is for Strings and String Methods in JavaScript  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and String Methods in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Strings and String Methods in JavaScript</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, </p>
+    </div>
+    <script>
+        // var string = "this"; -> strings are created like this -> also can use " " or ' ' both are valid 
+        var string = "this";
+        var string = 'this';
+        var string = 'thi"s';   //to add " in console
+
+        var name ='Harry';
+        var channel = "CodeWithHarry";
+        var message = 'Harry is good boy';
+
+        // var temp = `${name} is a nice person and he has a channel called ${channel}`; -> we use this to create big templetes of String
+        var temp = `${name} is a 'nice' person and he has a "channel" called ${channel}`;
+        console.log(temp);
+        // console.log(string + name + message); -> This is String concadination(i.e merging of Strings)
+        // console.log(string + name + message);
+
+        // var len = name.length; -> getting the length of String
+        var len = name.length;
+        console.log(`The length of name is ${len}`);
+
+        //Escape sequence character
+        // here \n  -> used to print on new Line
+        // here \t  -> used to give one tab
+        console.log("Hello World \n Sagar \t and Jayesh");
+
+        //Generating String using constructor 
+        var y = new String("This");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>This is an h3 heading</h3>'
+    </script>
+</body>
+</html>
