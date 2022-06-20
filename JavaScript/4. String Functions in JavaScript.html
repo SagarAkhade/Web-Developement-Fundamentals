@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- This Program for String Functions in JavaScript  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <script>
+        //Index start from 0, 1, 2, ...
+        // var position = str.indexOf('is'); -> function gives first occurence of that substring
+        // var position = str.lastIndexOf('is'); -> function gives last occurence of that substring 
+        // var substr = str.slice(1, 6); -> gives the substring from given string. It can also take negative values
+        // str.slice(starting point, ending point) -> starting from index 1 to 5 printed for(1,6)
+        // var substr = str.substring(1, 6); -> gives the substring from given string. It cannot take negative values
+        // var substr = str.substr(1, 7); -> gives the substring from given string.
+        // str.substr(starting point, length of String); -> 
+        //var replace = str.replace('string', 'Sagar'); -> will replace in given string
+        // console.log(str.toUpperCase()); -> conerts into Upper Case
+        // console.log(str.toLowerCase()); -> conerts into lower Case
+        // var newString = str.concat('New String'); -> to concat(merge) two String
+        // console.log(strWithWhitespace.trim()); -> will trim(remove) the white spaces at start and end only 
+        //var char3 = str.charAt(2); -> will print char at index 2 in console 
+        //var charCode = str.charCodeAt(2); -> will print char code at index 2 in console (ASCII value)
+        // console.log(str[3]) -> will print char at index 3 in console 
+      
+        var str = "This is a string";
+        console.log(str);
+
+        var position = str.indexOf('is');
+        console.log(position);
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        //Substring from a String 
+        var substr = str.slice(1, 6);
+        console.log(substr);
+
+        var substr = str.substring(1, 6);
+        console.log(substr);
+
+        var substr1 = str.substr(1, 8);
+        console.log(substr1);
+
+        var replace = str.replace('string', 'Sagar');
+        console.log(replace);
+
+        console.log(str.toUpperCase()); 
+        console.log(str.toLowerCase());
+
+        var newString = str.concat('New String');
+        console.log(newString);
+
+        var strWithWhitespace = "    this contains     whitespaces   ";
+        console.log(strWithWhitespace);
+        console.log(strWithWhitespace.trim());
+
+        var char3 = str.charAt(2);
+        console.log(char3);
+        var charCode = str.charCodeAt(2);
+        console.log(charCode);
+
+        console.log(str[3])
+    </script>
+</body>
+</html>
