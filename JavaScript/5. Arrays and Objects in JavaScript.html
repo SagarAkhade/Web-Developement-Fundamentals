@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- This prgram is for Arrays and Objects in JavaScript  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in JavaScript</title>
+</head>
+<body>
+    <div class="container">Simple HTML</div>
+
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        // let myVar5 = undefined; -> 'undefined' means there is no value
+        let myVar5 = undefined;
+
+        //Here below is Object : used for storing key-value pair 
+        let employee = {
+            name: "Sagar",
+            salary: 4000000,
+            channel1: "CodeWithHarry",
+            channel2: "ProgrammingWithHarry",
+        }
+        console.log(employee);
+        //console o/p : {name: 'Sagar', salary: 4000000, cahnel1: 'CodeWithHarry', channel2: 'ProgrammingWithHarry'}
+        console.log(employee.salary);
+        //console o/p : 4000000
+
+
+        //Arrays
+        //Arrays can store int, floats, booleans, string all data type simultaneously 
+        // Array index start from 0, 1, 2, 3... 
+        // let names = [1, 2, 4, "Harry", undefined]; -> Array declaration 
+        // marks = marks.sort(); -> will sort the Array
+        // marks.push("this is pushed"); -> will push the element in End of Array
+        // let arr = new Array(23); -> will create array which contains 23 elements
+        let names = [1, 2, 4, "Harry", undefined]; 
+        console.log(names); 
+        console.log(names[0]);  
+        // Console o/p : 1
+
+        // Creating Array as as Object
+        let marks = new Array(41, 2, 4, "String");
+        console.log(marks);
+        // Console o/p : [41, 2, 4, 'String']
+        console.log(marks.length);  
+        // Console o/p : 4
+
+        marks = marks.sort();
+        console.log(marks);
+        // Console o/p : [2, 4, 41, 'String']
+
+        marks.push("this is pushed");
+        console.log(marks);
+        // Console o/p : [2, 4, 41, 'String', 'this is pushed']
+
+        let arr = new Array(23);
+
+    </script>
+</body>
+</html>
