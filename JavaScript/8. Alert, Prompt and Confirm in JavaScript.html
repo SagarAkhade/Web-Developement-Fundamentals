@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- This program is Alert, Prompt and Confirm in JavaScript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert, Confirm and Prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a Page
+    </div>
+
+    <script>
+        // Alert in in-browser JavaScript
+        // alert("This is Message"); -> Alert is Function which popup in Webpage(in Modaal window)
+        //alert() -> does not return Anything
+        alert("This is Message");
+
+        // Prompt in in-browser JavaScript
+        //prompt("pass the question", "here will show default value")
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        // Confirm in in-browser JavaScript
+        // confirm() used to warn the user before click(for duble check purpose)
+        let deletePost = confirm("Do you really want to delete this Post!!!");
+        console.log(deletePost);
+        if(deletePost) {
+            //Code to delete the post
+            console.log("Your post has been deleted successfully");
+        }
+        else {
+            console.log("Your post has not been deleted");
+        }
+    </script>
+</body>
+</html>
