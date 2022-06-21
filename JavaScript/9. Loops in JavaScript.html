@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- This program is for Loops in JavaScript  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        This is about Loops in JavaScript
+    </div>
+
+    <script>
+        console.log("This is Tutorial 55");
+
+        //Loops in JavaScript 
+        //for loop 
+        for (let i = 0; i < 3; i++) {
+            console.log(i);
+        }
+        //Console o/p : 
+        // 0
+        // 1
+        // 2
+
+        //creating Array
+        let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja", "Skillf"];
+        for (let index = 0; index < friends.length; index++) {
+            console.log("Hello friend, " + friends[index]);
+        }
+        //Console o/p : 
+        // Hello friend, Rohan
+        // Hello friend, Sanjeev
+        // Hello friend, Deepti
+        // Hello friend, Pooja
+        // Hello friend, Skillf
+
+        // forEach function 
+        friends.forEach(function f(element) {
+            console.log("Hello friend, " + element + " to Modern JavaScript");
+        });
+        //Console o/p : 
+        // Hello friend, Rohan to Modern JavaScript 
+        // Hello friend, Sanjeev to Modern JavaScript
+        // Hello friend, Deepti to Modern JavaScript
+        // Hello friend, Pooja to Modern JavaScript
+        // Hello friend, Skillf to Modern JavaScript
+
+        // for of loop 
+        for (element of friends) {
+            console.log("Hello friend, " + element + " to Modern JavaScript again");
+        }
+        //Console o/p : 
+        // Hello friend, Rohan to Modern JavaScript again 
+        // Hello friend, Sanjeev to Modern JavaScript again
+        // Hello friend, Deepti to Modern JavaScript again
+        // Hello friend, Pooja to Modern JavaScript again
+        // Hello friend, Skillf to Modern JavaScript again
+
+        //Below is Object is created 
+        let employee = {
+            name: "Harry",
+            salary: 2,
+            channel: "CWH"
+        }
+        //for in loop -> used to iterate over Objects
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loop in JavaScript 
+        let i = 0;
+        while (i < 2) {
+            console.log(`${i} is less than 2`);
+            i++;
+        }
+        //Console o/p : 
+        // 0 is less than 2
+        // 1 is less than 2
+
+        //do-while loop
+        let j = 0;
+        do {
+            console.log(` ${j} is less than 2`);
+            j++;
+        } while (j < 2);
+        //Console o/p :
+        // 0 is less than 2
+        // 1 is less than 2
+    </script>
+</body>
+
+</html>
