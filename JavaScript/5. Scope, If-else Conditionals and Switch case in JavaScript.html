@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- This prograam is for Scope, If-else Conditionals and Switch case in JavaScript -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals in JavaScript</title>
+</head>
+
+<body>
+    <!-- Emmet used here 
+    div>ul>li{Item-$}*7 -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        //Below declared are Global variables and can be access in any function
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        console.log(string1);
+        // let a = "u"; -> 'let' is another data type same as 'var' but we use it most
+        let a = "u";
+        console.log(a);
+
+        //here we have created blog an it can also be Function blog 
+        {
+            let a = "u6";
+            console.log(a);
+        }
+        console.log(a);
+
+        //const -> is data type. Once it is declared cannot be changed after 
+        const b = "This cannot be Changed";
+        //b = "Why I want to change. This cannot be Changed";
+        console.log(b);
+        //console O/p : Error if we over write b
+
+        //Conditionals 
+        //If-else-if ladder statements :
+        let age = 4;
+        if (age > 18) {
+            console.log("You can drink water");
+        }
+        else if (age == 2) {
+            console.log("Age is 2");
+        }
+        else if (age == 5) {
+            console.log("Age is 5");
+        }
+        else {
+            console.log("You can drink Cold Drink");
+        }
+        //console O/p : You can drink Cold Drink
+
+        //Switch Statement 
+        const cups = 44;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+            case 43:
+                console.log("The value of cups is 43");
+                break;
+            default:
+                console.log("The value of cups is none of 4, 41, 42, 43");
+                break;
+        }
+        //console O/p : The value of cups is none of 4, 41, 42, 43
+    </script>
+</body>
+
+</html>
