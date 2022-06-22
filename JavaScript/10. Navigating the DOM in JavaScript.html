@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- This program is for Navigating the DOM in JavaScript  -->
+<!-- DOM : Document Object Model (DOM -> Complete HTML File) -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        //Accessing the Elements of DOM by ID and Class 
+        // let main = document.getElementById('ID here'); ->> to access the DOM(Main HTML) by id
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        // nav.innerHTML ->> will give content of DOM file
+        // nav.innerHTML = "<li>Dyanmic</li>" ->> will change the content on DOM page 
+
+        // let containers = document.getElementsByClassName('container'); ->> to access the DOM(Main HTML) by class
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+        containers[0]; //->> will give container one 
+        containers[1]; //->> will give container two 
+
+        //Accessing the CSS Selectors 
+        // let sel = document.querySelector('.container'); ->> the first container class will be selected. And same also for id
+        let sel = document.querySelector('.container');
+        console.log("Selector returns ", sel);
+        let selector = document.querySelector('#nav');
+        console.log("Selector returns ", selector);
+
+        // let sel1 = document.querySelectorAll('#nav>li'); ->> will returns all the Selectors in nav in li 
+        let sel2 = document.querySelectorAll('#nav>li');
+        console.log("All Selector retruns ", sel2);
+
+    </script>
+</body>
+
+</html>
