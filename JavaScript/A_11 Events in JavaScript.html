@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- This program for Events and Listening to Events in JavaScript -->
+<!-- Event ->> means something happens that is clicking of any button -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser Events : 
+    Mouse Events :
+    onclick
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    form Events : 
+    submit
+    focus
+
+    DOMContentLoaded
+
+    transitioned  -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, sed? Explicabo, accusamus nesciunt
+            culpa delectus, rerum ea aperiam quis laborum in sequi placeat totam minima voluptatem, excepturi dolor
+            temporibus. Similique, tenetur praesentium?</p>
+    </div>
+
+    <!-- onclick="toggleHide()" ->> is event in JS, activated when we left click it-->
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        // para.addEventListener('event_name' , function_done()) ->> used for adding event in DOM 
+        // mouseover ->> an event, triggered when we move cursor on content
+        // mouseout ->> an event, triggered when we move out cursor from content
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            console.log('Mouse Inside');
+        });
+        para.addEventListener('mouseout', function run() {
+            console.log('Mouse now went Outside');
+        });
+
+        //function initialize for onclick event
+        function toggleHide() {
+            let para = document.getElementById('para');
+
+            //elementId.style.cssProperty = 'cssPropertyValue'; ->> (CSS accessing the properties here)
+            // para.style.display = 'none'; ->> will hide the content
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
