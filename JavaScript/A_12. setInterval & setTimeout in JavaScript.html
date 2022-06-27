@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- This program is for setInterval & setTimeout in JavaScript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript setTimeOut and clearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is Tutorial 58");
+        // setTimeout ->> Allow us to run the Function once, after the interval of time 
+        // clearTimeout ->> Allow us to run the Function repeatedly, after the interval of time 
+
+        function greet(name, byeText) {
+            console.log("Hellow Good Morning " + name + " " + byeText);
+        }
+        
+        // setTimeout(function_name, time_in_ms); ->> Syntax generaly used
+        // setTimeout(function_name, time_in_ms, "any_third_argument", "add_multiple_arguments_If_any");
+        //setTimeout(greet, 5000, "Sagar", "Take Care");
+
+        // timeOut ->> gives the unique id of setTimeout
+        // timeOut = setTimeout(greet, 5000, "Sagar", "Take Care");
+        // console.log(timeOut);
+
+        // clearTimeout(timeOut); ->> this will cancel setTimeout
+        //clearTimeout(timeOut);
+
+        // setInterval(function_name, time_in_ms); ->> Syntax generaly used
+        // setInterval(function_name, time_in_ms, "any_third_argument", "add_multiple_arguments_If_any");
+        // setInterval(greet, 1000, "Sagar", "Good Evening"); ->> Allow us to run the Function repeatedly, after the interval of time 
+        //setInterval(greet, 1000, "Sagar", "Good Evening");
+        // intervalId = setInterval(greet, 1000, "Sagar", "Good Evening");
+
+        // clearInterval(intervalId); ->> it will clear setInterval
+        // clearInterval(intervalId);
+
+        // time = new Date(); ->> gives the current System time
+        // document.getElementById('time').innerHTML = time; ->> innerHTML will print on DOM file
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+    
+</body>
+</html>
