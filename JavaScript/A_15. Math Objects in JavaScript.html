@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- This program is for Math Objects in JavaScript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Math Object Tutorial</h1>
+    </div>
+
+    <script>
+        // Math object has various math functions
+        //Printing Math Object 
+        let m = Math;
+        console.log(m);
+
+        //Printing the constants from the Math Object 
+        console.log("The value of Math.E is ", Math.E);
+        console.log("The value of Math.PI is ", Math.PI);
+        console.log("The value of Math.LN2 is ", Math.LN2);
+        console.log("The value of Math.SQRT1_2 is ", Math.SQRT1_2);
+        console.log("The value of Math.LOG2E is ", Math.LOG2E);
+        
+        //Printing the Functions from the Math Object 
+        let a = 34.64534;
+        let b = 89;
+
+        // Math.round(a) ->> functions gives rounded off value of number
+        console.log("The value of a and b is ", a, b);
+        console.log("The value of a and b rounded is ", Math.round(a),Math.round(b));
+
+        // Math.pow(3, 2) ->> power function gives the rest to power of i.e. 3^2
+        console.log("3 raised to the power of 2 is ", Math.pow(3, 2));
+        console.log("2 raised to the power of 12 is ", Math.pow(2, 12));
+        console.log("1 raised to the power of 2 is ", Math.pow(1, 2));
+
+        // Math.sqrt(36) ->> Math Function gives the square root of number
+        console.log("Sqaure root of 36 is ", Math.sqrt(36));
+        console.log("Sqaure root of 64 is ", Math.sqrt(64));
+        console.log("Sqaure root of 50 is ", Math.sqrt(50));
+
+        //Ceil and floor
+        // Math.ceil(5.8) ->> function gives higher nearest value i.e 5.8->6
+        // Math.floor(5.8) ->> function gives lower nearest value i.e 5.8->5
+        console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8));
+
+        // Math.abs(-5.66) ->> function always gives the positive value
+        console.log("Absolute value of 5.66 is ", Math.abs(5.66));
+        console.log("Absolute value of -5.66 is ", Math.abs(-5.66));
+
+        //Trigonometric Functions
+        // Math.sin(0) ->> function gives the sin value and similarly other 
+        console.log("The value of sin(0) is ", Math.sin(0));
+        console.log("The value of cos(0) is ", Math.cos(0));
+        console.log("The value of tan(0) is ", Math.tan(0));
+
+        //Min and Max function
+        // Math.min(4, 5, 6) ->> function gives the minimum of all values 
+        // Math.max(14, 5, 16) ->> function gives the maximum of all values 
+        console.log("Minimum value of 4, 5, 6 is ", Math.min(4, 5, 6));
+        console.log("Maximum value of 14, 5, 16 is ", Math.max(14, 5, 16));
+
+        // Generating a Random number 
+        // let r = Math.random(); ->> it will generate random number between 0 to 1
+        let r = Math.random();
+        console.log("The random number is : ", r);
+
+        //Generating random variable between 1 to 100
+        // Random number b/w (x, y) = x + (y-x)*Math.Random()
+        let x = 1;
+        let y = 100;
+        let r1_100 = x + (y-x) * Math.random();
+        console.log("The random number b/w 1 to 100 is ", Math.ceil(r1_100));
+    </script>
+</body>
+</html>
