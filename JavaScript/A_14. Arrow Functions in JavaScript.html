@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- This program is for Arrow Functions in JavaScript -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+    <div class="container">
+        This is Arrow Function tutorial
+    </div>
+
+    <script>
+        // This is normal way of Function defining
+        // function greet() {
+        //     console.log("Good Morning");
+        // }
+
+        // Arrow Functions ->> this is shortcut way to define function
+        let greet = () => {
+            console.log("Good Morning");
+        };
+        greet();
+
+        //Arror function with shortcut. This is for multi argument with return value
+        let sum = (a, b) => {
+            return a + b;
+        };
+        console.log(sum(34, 5));
+
+        //Arror function with shortcut of shortcut. This is for multi argument with return value
+        let sum2 = (a, b) => a + b;
+        console.log(sum2(1, 2));
+
+        //Arror function with shortcut of shortcut. This is for single argument only with return value
+        let half = a => a / 2;
+        console.log(half(45));
+
+        //Arror function with shortcut of shortcut. This will return nothing
+        let greet2 = () => console.log("Good Afternon");
+        greet2();
+
+        //Arrow function Shortcut for setTimeout
+        setTimeout(() => {
+            console.log("We are inside setTimeout");
+        }, 3000);
+
+        let obj1 = {
+            greeting : "Good Morning",
+            names : ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+            speak(){
+                //Arror function inside object, this.greeting here known as ->> laxical this
+                this.names.forEach((students)=>{
+                    console.log(this.greeting +  " Kukdoo Koo " + students);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>
