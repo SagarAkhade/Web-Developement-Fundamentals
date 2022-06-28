@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- This program is for Date and Time in JavaScript -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: blanchedalmond
+            ;
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+
+
+    <script>
+        console.log("This is date and time tutorial");
+
+        // let now = new Date();->>Syntax for date->>gives current date and  time
+        let now = new Date();
+        console.log(now);
+
+        // let dt = new Date(time_ms);->> this is reffernce of time from the initial time when it was set
+        let det = new Date(0);
+        console.log(det);
+
+        // let newDate = new Date("2029-09-30"); ->> it will generate that date which is given
+        let d = new Date("2029-09-30");
+        console.log(d);
+
+        //let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(3020, 0, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        // let yr = variable.getFullYear(); ->> gives the year of that variable & similar other functions to get month, date, hours, minute, seconds, milliseconds
+        let yr = newDate.getFullYear();
+        console.log("This is year" ,yr);
+
+        let dt = newDate.getDate();
+        console.log("The date is" ,dt);
+
+        let day = newDate.getDay();
+        console.log("The day is",day);
+
+        let month = newDate.getMonth();
+        console.log("The month is" ,month);
+
+        let hours = newDate.getHours();
+        console.log("The hour is", hours);
+
+        // newDate.setDate(15); ->> will change the date like wise other functions are also there 
+        newDate.setDate(8);
+        console.log(newDate);
+        newDate.setMinutes(29);
+        console.log(newDate);
+
+        // console.log(Date.now()); ->> will print the current time of now in ms
+        console.log(Date.now());
+
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>
