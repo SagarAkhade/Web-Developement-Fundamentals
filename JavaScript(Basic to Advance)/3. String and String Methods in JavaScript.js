@@ -19,6 +19,32 @@ console.log(firstName.length);
 console.log(firstName[firstName.length - 1]);
 // Output : r
 
+// String concatenation :-
+// to combine two or more strings into one string
+let string1 = "sagar";
+let string2 = "akhade";
+let fullName = string1 + " " + string2;
+console.log(fullName);
+// Output : sagar akhade
+
+let string3 = "17";
+let string4 = "10";
+let newString = string3 + string4;
+console.log(newString);
+// Output : 1710
+let newString1 = +string3 + +string4; // ->> + sign converts string to number
+console.log(newString1);
+// Output : 27
+
+// Template string :-
+// Ex : `my name ${variable_name}`
+let age1 = 22;
+let firstName1 = "sagar";
+// let aboutMe = "my name is " + firstName1 + " and my age is " + age1;
+let aboutMe = `my name is ${firstName1} and my age is ${age1}`;
+console.log(aboutMe);
+// Output : my name is sagar and my age is 22
+
 // String Methods ->>
 // Some methods ->> trim(), toUpperCase(), toLowerCase(), slice()
 
