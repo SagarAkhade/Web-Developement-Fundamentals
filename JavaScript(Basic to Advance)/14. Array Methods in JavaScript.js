@@ -5,6 +5,7 @@
 
 // forEach loop :-
 // forEach loop takes callback function
+// Used to iterate through Array
 const numbers = [4, 2, 5, 8];
 numbers.forEach(function (number, index) {
     console.log(`index is ${index}, number is ${number}`)
@@ -33,8 +34,9 @@ users.forEach(function (user) {
 // Sagar Garima harshit nitish ->> each on same line
 
 // map method :-
-// map method also take call back function
+// map method take call back function
 // map method always returns new array
+// map method doesnot change original array
 const numbers1 = [3, 4, 6, 1, 8];
 const squareNumber = numbers1.map(function (number) {
     return (number * number);
@@ -46,7 +48,7 @@ const users1 = [
     { firstName: "Sagar", age: 22 },
     { firstName: "Garima", age: 20 },
     { firstName: "harshit", age: 21 },
-    { firstName: "nitish", age: 25 },
+    { firstName: "nitish", age: 25 }
 ]
 const userNames = users1.map(function (user) {
     return user.firstName;
@@ -74,6 +76,7 @@ console.log(oddNumbers);
 
 // Reduced method :-
 // Reduce method take callback fuction 
+// Here callback function has two parameters (accumulator and currentValue (depends))
 // Reduce method always returns single value
 // Reduce method gives the sum of all elements 
 const numbers3 = [1, 2, 3, 4, 5, 10];
@@ -87,6 +90,7 @@ console.log(sum);  // Output : 25
 //      6           4           10
 //      10          5           15
 //      15          10          25  ->> finally return single value
+// Ex : Real world example
 const userCart = [
     { productId: 1, productName: "mobile", price: 12000 },
     { productId: 3, productName: "laptop", price: 22000 },
@@ -102,7 +106,7 @@ console.log(totalAmount);
 // Sort method will rearange the elements in increasing/decreasing oder
 // Sort method will change the original Array
 // sort method will sort according to string (covert to ASCII value) 
-// Sort method can also take callback function(for sorting numbers)
+// Sort method take callback function for sorting numbers
 const userName = ["sagar", "harshit", "mohit", "nitish"];
 userName.sort();
 console.log(userName);
@@ -135,8 +139,8 @@ console.log(highToLow);
 
 // find method :-
 // find method takes callback function
-// It will return single element whose condition is satidfied in 
-// callback function. It returns first satisfied element 
+// It will return single element whose condition is satidfied.
+// It returns first satisfied element
 const myArray = ["Hello", "cat", "dog", "lion"];
 const ans = myArray.find((string) => string.length === 3);
 console.log(ans);  // Output : cat
@@ -154,12 +158,12 @@ console.log(myUser);
 
 // Every method :-
 // Every method used to check all elements in array are even or odd(According to conditions)
-// Every method returns boolean(T/F)
+// Every method returns boolean(T/F) value.
 // Every method takes callback function
 const numbers6 = [2, 4, 6, 8, 10];
 const isEven = numbers6.every((number) => number % 2 === 0);
 console.log(isEven);   // Output : true
-// Ex : real life example
+// Ex : real world example
 // check if every product price is less than 30000
 const userCart1 = [
     { productId: 1, productName: "mobile", price: 12000 },
@@ -173,11 +177,11 @@ console.log(ans1);  // Output : false
 // some method will check if any number in array is even/odd
 // (According to conditions passed)
 // Some method take callback function 
-// Some method returns boolean(T/F)
+// Some method returns boolean(T/F) value.
 const numbers7 = [3, 5, 11, 9];
 const a = numbers7.some((number) => number % 2 === 0);
 console.log(a); // Output : false 
-// Ex : real life example
+// Ex : real world example
 // To check any products price above 1lac
 const userCart2 = [
     { productId: 1, productName: "mobile", price: 12000 },
@@ -190,7 +194,7 @@ console.log(isAbove1L);   // Output : true
 
 // fill method :-
 // fill method is used to fill many values from user
-// fill method also used for to change values in current array
+// fill method also used to change values in current array
 // fill method modifies the original array
 // fill(valueToAdd, startIndex, endIndex) ->> will change initial values in given array
 // by valueToAdd starting from startIndex given and end at endIndex - 1
@@ -208,23 +212,21 @@ console.log(myArray2);
 // the deleted element is also gets returned
 const myArray3 = ['item1', 'item2', 'item3'];
 // delete ->>
-// splice(startIndex, numberOfItemToDelete)
+// splice(startIndex, numberOfItemsToDelete)  
 const deletedItem = myArray3.splice(1, 1);
 console.log(myArray3); // Output : ['item1', 'item3']
 console.log(deletedItem);   // Output : ['item2']
 // insert ->>
-// splice(startIndex, numberOfItemToDelete, itemToBeInsert)
+// splice(startIndex, numberOfItemToDelete, itemsToBeInsert)
 myArray3.splice(1, 0, "inserted item");
 console.log(myArray3);
 // Output : ['item1', 'inserted item', 'item3']
 // insert and delete together ->>
 // it will first delete items and then insert 
-// And also deleted items also gets returned 
+// And deleted items also gets returned 
 const myArray4 = ['item1', 'item2', 'item3'];
 const deletedItem1 = myArray4.splice(1, 2, "inserted item1", "inserted item2");
 console.log(myArray4);
 // Output : ['item1', 'inserted item1', 'inserted item2']
 console.log(deletedItem1);
 // Output : ['item2', 'item3']
-
-
