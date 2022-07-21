@@ -1,0 +1,103 @@
+Q. Spread operator in JavaScript ? 
+Ans - 
+// Spread operator :-
+// New way of cloning array
+let arr4 = [...arr1];
+console.log(arr4);
+// Output : ['item1', 'item2']
+let arr5 = [...arr1, "item3", "item4"];  // cloning and adding some more elements with 
+spread operator
+// Also creating array using two spread operator
+let newArray = [...arr1, ...arr3]; 
+
+Q. can we use expression in switch case ?
+Ans : 
+The expression in the switch can be a variable or an expression .
+- but it must be an integer or a character.
+
+Q. difference between mutable and immutable objects ?
+Ans : Objects whose value can change are said to be mutable; objects whose value is 
+unchangeable once they are created are called immutable.
+
+Q. what is asynchronous and synchronous in javascript ?
+Ans : In synchronous operations tasks are performed one at a time and only 
+when one is completed, the following is unblocked. In other words, you need to wait for a
+task to finish to move to the next one. In asynchronous operations, on the other hand, 
+you can move to another task before the previous one finishes
+
+Q. Differences between Document and Window Objects ?
+Ans : 
+Document Object: The document object represent a web page that is loaded in the browser. 
+By accessing the document object, we can access the element in the HTML page
+Window Object: It represents a browser window or frame that displays the contents of the
+webpage. Whenever a window appears on the screen to display the contents of the document, 
+the window object is created.
+
+Q. difference between BOM and DOM in javascript
+Ans : The Document Object Model (DOM) defines a standard for accessing documents. 
+The Browser Object Model (BOM) allows JavaScript to "talk to" the browser. 
+In the HTML DOM, the Element object represents an HTML element, 
+like P, DIV, A, TABLE, or any other HTML element.
+The BOM (Browser Object Model) consists of the objects navigator , history , screen ,
+location and document which are children of window .
+
+Q. difference between attribute and property in javascript ?
+Ans : In the HTML we write, we declare elements and pass values into attributes. 
+In JavaScript, specifically in the DOM, we have properties available when querying 
+HTML elements via the DOM.
+
+Q. Let Vs var ? which is better ?
+Ans :  Difference between var and let
+var can be initialize multiple times with same variable name 
+But in case of let, we cannot initialize with same variable name muliple times. 
+It will gives error
+Main difference is block scope(Let) vs function scope(Var)
+- moslty let is prefered
+
+Q. what is the difference between slice and splice in javascript ?
+Ans : The splice() method changes the original array and slice() method doesn't change the 
+original array.
+slice() :- used to clone the array element and gives new array 
+// Splice method :-
+// Splice method is used to add or delete something from array
+// Splice method will change original array
+// the deleted element is also gets returned
+// insert and delete together ->>
+// splice(startIndex, numberOfItemToDelete, itemsToBeInsert)
+// it will first delete items and then insert 
+// And deleted items also gets returned 
+const myArray4 = ['item1', 'item2', 'item3'];
+const deletedItem1 = myArray4.splice(1, 2, "inserted item1", "inserted item2");
+console.log(myArray4);
+// Output : ['item1', 'inserted item1', 'inserted item2']
+console.log(deletedItem1);
+// Output : ['item2', 'item3']
+
+Q. What is an event loop in JavaScript ?
+Ans : JavaScript is a single-threaded synchronous programming language. 
+It means that the main thread where JavaScript code is run, runs in one line at a time manner
+
+Q. closure in javascript ?
+Ans : A closure is a function having access to the parent scope, 
+even after the parent function has closed.
+
+Q. What is IIFE ? 
+Ans. A soon as function is created it invokes itself doesn’t need to invoke explicitly. 
+In the below example variable iife will store a string that is returned by the function 
+execution.
+var iife = function (){
+    return 'Immediately Invoked Function Expressions(IIFEs) example ';
+  }();
+  console.log(iife); // 'Immediately Invoked Function Expressions(IIFEs) example '
+  
+Q. What is hoisting ? 
+// Hoisting :-
+// calling a function before its declarazation is called Hoisting behaviour
+// Hoisting only works with function declaration and not with function Expression Or 
+Arrow function
+
+hello();  // calling function before inititalization only done with function declaration
+function hello() {  //function declaration
+    console.log("Hello world");
+}
+// Output : Hello world
