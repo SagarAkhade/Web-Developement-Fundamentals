@@ -1,0 +1,199 @@
+** Theory Questions on JavaScript :- 
+* Easy :-
+Q. what is closures in JavaScript and Explain (6)
+Q What are bind, call and apply methods in JS? Explain the difference? (5)
+Q. Explain events. Event loop working? event bubbling and capturing (6)
+Q. Event propogation woring (bubbling and capturing) 
+Q. Explain promises, async await (2)
+Q. Explain functions, arrow functions (2)
+Q. Difference between normal function and arrow function ? 
+Q. Explain spread and rest operator (3)
+Q. Can we use expression in switch case ?
+Q. What are the data types available in javascript?
+Q. What are the Primitive Data Types in javascript?
+Q. What are the different types of scope. (2)
+Q. What is NaN? (2)
+Q. Output of isNaN('1') and isNaN('ads').
+Q. Difference between parseInt and Number
+Q. Difference between null and undefined.
+Q. Output of typeof null and typeof undefined.
+Q. Explain Lexical scoping.  (2)
+Q. What is Object?
+Q. How does javascript work?
+Q. What is 'this' keyword?
+Q. truthly and falsey value in javascript ? 
+Q. Print all the values of an object
+Q. window object.
+Q. strict mode ? 
+Q. Pass by value VS Pass by reference?
+Q. Type conversion & type coercion ?
+
+
+* Medium :-
+Q. What is javascript? (2)
+Q. Is javascript statically typed or dynamically typed?
+Q. Is JavaScript single-threaded? (2)
+Q. Is JavaScript single-threaded? If yes, how is it able to run asynchronous 
+code? 
+Q Do you know about the event loop in JS? 
+Q Can you tell the difference between let, var, and const? which one is better
+and why ? (6)
+Q What happens if I don't initialize a const variable?
+Q Do you know what is function and block scope in JS?
+Q Do you know what is the temporal dead zone in JS? (2)
+Q Can you call a JS function as soon as a page loads?
+Q What is the difference between setTimeout and setInterval?
+Q What are IIFE functions?  (2)
+Q Provided an API, how to make a network call?
+Q Do you know about AJAX?
+Q Difference in the output? (2)
+  function foo1()
+  {
+    return {
+        bar: "hello"
+    };
+  }
+
+  function foo2()
+  {
+    return
+    {
+        bar: "hello"
+    };
+  }
+Q Given an object -
+{name: "Paddy", address: {town: "Lerum", country: "Sweden"}}  
+Create a simple copy object?
+Q What will the output be for the following?
+  12 + 5 + "22" and 12 + "22" + 5? 
+Q. "1"+2+3 , 1+true+"1", 1 + +"2" + 3 and 1+2+"3" output of this.
+Q What is the difference between == and === operator in JS? (3)
+Follow up - 0 == false and 0===false
+Q Difference between the splice and slice methods in JS?
+Q. Difference between mutable and immutable objects. Any Example ? 
+Q. What is callback function ? (2)
+Q. What is temporal dead zone ?
+Q. What is Asynchronous and synchronous in JS? Any example (2)
+Q. What are a promises and how it work? (3)
+Q. What is difference between window and document?
+Q. Difference between BOM and DOM ?
+Q. What is difference between Attribute and Property ?
+Q. In Array what is main difference between slice and splice ?
+Q. Object.freeze() vs const ?
+Q. Object comparison - code for shallow quality and deep quality check ? 
+Q. Make a network call to the following URL
+https://jsonplaceholder.typicode.com/comments
+and fetch the results and store them in localStorage?
+Q. What is the difference between function declaration and expression?
+Q. Explain Hoisting in Javascript (6)
+Q. What is ouput of below code:
+console.log(a)
+var a = 10
+console.log(b)
+let b = 20
+Q. What is prototype in JS ? 
+Q. Local storage Vs Session Storage ? 
+
+* Hard :-
+Q. Currying function ?
+Q. Pure function ?
+Q. What is DOM. DOM manupulation ? (3)
+Q. ES6 concepts ? (2)
+Q. Does JS has classes?
+Follow-up. Do you know about polyfills?
+Follow-up - Do you know about transpilation and Babel?
+Q. Does JS support Inheritance?
+Q. How can you apply inheritance in JS? 
+Q. How do you check whether a string contains a substring? 
+Q . What are the various ways to create objects in JS?
+Q. Explain event delegation ? 
+Q. Differences between View state and Session state
+Q. How can you handle exceptions in JS?
+Q. What is RegEx in JS? 
+Q. What are Imports and Exports ?
+Q. What is the purpose of debugger in JS?
+Q. What is the name of the method to check equality of two nodes? 
+Q. What are generator functions?  (4)
+Q. JS is an event driven language. How? 
+Q. How do you access web storage?  
+Q. const person = {
+ age: 20,
+ name: 'Ben'
+};
+const peopleArray = [person, person, person];
+peopleArray[1].name = 'Joe';
+console.log(peopleArray[0].name);
+Follow-up - Do you know about shallow and deep copy?
+Follow-up - How can I create a deep copy of this function?
+Q. What will be the output for the following?
+ for (var i = 0; i < 5; i++) {
+setTimeout(function() { console.log(i); }, i * 1000 );
+ }
+Follow-up
+ for (let i = 0; i < 5; i++) {
+setTimeout(function() { console.log(i); }, i * 1000 );
+ }
+Q. (function(){
+var a = b = 3;
+})();
+console.log("a defined? " + (typeof a !== 'undefined'));
+console.log("b defined? " + (typeof b !== 'undefined'));
+Q. Write Debounce function ? 
+
+** Bacis HTML and CSS questions :-
+* HTML
+1. What is HTML?
+2. What is DOM?
+3. What is DOCTYPE and write DOCTYPE syntax for html5?
+4. What happens if I write html4 code with DOCTYPE html5
+5. What is a meta tag?
+6. What are semantic tags?
+7. What are entities in HTML?
+8. Explain encrypt attribute in the form tag?
+
+ * CSS
+1. What is CSS?
+2. Different ways of styling an HTML element?
+3. What are selectors and explain different selectors?
+4. what are pseudo-classes?
+5. Difference between display: none and visibility: hidden.
+6. Difference between inline, inline-block, and block elements?
+7. What is float property?
+8. Different types of positioning an element?
+9. What is z-index?
+
+
+* Coding Questions of JavaScript :-
+Q. Write a program to print the sum of factorials of first n terms (Easy)
+Q. remove comma from an Array. (Easy)
+Q. reverse Array. (Easy)
+Q. .Check the no is palindrome or not. (Easy)
+Q. Find 3rd largest element from an array. (Easy)
+Q. remove spaces of string in an Array. (Easy)
+Q. remove duplicates of an Array. (Medium)
+Q. Remove all instance of element from the array ? (Medium)
+Q Find the factorial of a function for the number passed? (Medium)
+Q Write a function to print the Fibonacci series in JS? (Medium)
+Q. Print from 0 to 5 with 2s of Interval ?  (Medium)
+Q. WAP in JS to create an arrow function 'concatenator' which can print 
+'hello world' with given function call 
+i.e. console.log(concatenator('hello')('world'))   (Medium)
+Q. create counter application?  (Medium)
+Q. Create two buttons. One for to display current date and time and other 
+one for to change the  color of text?  (Medium)
+Q. Write a code to print infinite series of natural numbers using simple 
+generator ?  (Medium)
+Q. WAP in JS to find out the sum i.e. 
+Input1: const arr1 = ['Jan100','Feb200','March300','April','May400','June500']
+Output1 : 1500 
+Input2 : const arr2 = ['onlytext', 'onlytexttwo']
+Output2 : 0 (Hard)
+Q. Write a JS program to calculate number of days left for next Diwali ? (Hard)
+Q. Create simple students list with add & delete functionality. (Hard)
+Q. Write a JS program to reverse each word in a given string without changing 
+the original position of a word (Hard)
+Q. Create an input field with button. When button is clicked, the text in input
+field should added below in a list. Moreover, whether any list item is clicked,
+it should be removed from from the list ? 
+Q. Backround changer project in which you will be changing color of the 
+background on click of button based on the user input ? (Challenge)
