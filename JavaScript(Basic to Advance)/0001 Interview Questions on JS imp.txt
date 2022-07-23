@@ -1,49 +1,137 @@
 ** Theory Questions on JavaScript :- 
 * Easy :-
-Q. what is closures in JavaScript and Explain (6)
-Q What are bind, call and apply methods in JS? Explain the difference? (5)
-Q. Explain events. Event loop working? event bubbling and capturing (6)
-Q. Event propogation woring (bubbling and capturing) 
-Q. Explain promises, async await (2)
-Q. Explain functions, arrow functions (2)
-Q. Difference between normal function and arrow function ? 
+Q. What is javascript? How js works? (6)
+Q. What is Scripting language?
+Q. What is Run time?
+Q. what is closures in JavaScript and Explain. and its uses?  (10)
+Q. Create a layout Closure in JS ? 
+Q. What are bind, call and apply methods in JS? Explain the difference? (11)
+Q. Explain events. Event loop working? event bubbling and capturing (10)
+Q. Event propogation woring (bubbling and capturing) (4)
+Q. Explain promises, async await (7)
+Q. Async await keyword ? (2)
+Q. What are a promises and how it work? why do we need promises (6)
+Q. Explain functions, arrow functions (3)
+Q. Difference between normal function and arrow function ? (3)
 Q. Explain spread and rest operator (3)
-Q. Can we use expression in switch case ?
-Q. What are the data types available in javascript?
-Q. What are the Primitive Data Types in javascript?
+Q. Switch case in JS ? 
+Q. Can we use expression in switch case ? (2)
+Q. What are the data types available in javascript? (4)
+Q. What are the Primitive Data Types in javascript? (2)
+Q. Primitive vs non-primitive? 
+Q. Symbol in JS?
 Q. What are the different types of scope. (2)
-Q. What is NaN? (2)
+Q. What is NaN? (3)
 Q. Output of isNaN('1') and isNaN('ads').
 Q. Difference between parseInt and Number
-Q. Difference between null and undefined.
-Q. Output of typeof null and typeof undefined.
-Q. Explain Lexical scoping.  (2)
-Q. What is Object?
+Q. Difference between null, undefined & undeclared  (6)
+Q. Output of typeof null and typeof undefined. 
+Q. Explain Lexical scoping.  (3)
+Q. What is Object? How you create object in JS?  (4)
 Q. How does javascript work?
-Q. What is 'this' keyword?
-Q. truthly and falsey value in javascript ? 
+Q. What is 'this' keyword?  (2)
+Q. truthly and falsey value in javascript ?  (2)
+Q. JS objects and iterations?
+Q. Different ways to create an object ? 
+Q. Explain object destructuring ? 
 Q. Print all the values of an object
 Q. window object.
-Q. strict mode ? 
-Q. Pass by value VS Pass by reference?
+Q. What is difference between window and document ?  
+Q. strict mode ? (3)
+Q. Pass by value VS Pass by reference? (2)
 Q. Type conversion & type coercion ?
-
-
+Q. Settimeout ? setinterval ? 
+Q. What is an Array? Brief  (2)
+Q. unshift, pop method in array ?
+Q. What do you mean by mutable and immutable ? 
+Q. Array values mutable or immutable ?
+Q. Perform Filter, Map, Reduce in JS array? (5)
+Q. Pollyfill for reduce?
+Q. Use sort method to sort [44, 4, 11]
+Q. What is difference between Attribute and Property ? (3)
+Q. Differenece between library and Framework ? 
+Q. What is type conversion?
+Q. What is Anonymous function and its Syntax?
+Q. Create Anonymous function, declaration function, arrow function ? (2)
+Q. for loop and while loop in JS ? 
+Q. What are forEach loop? and its Syntax?
+Q. How many ways to link JS with HTML?
+Q. setTimeout(function(){console.log(3)}, 0); 
+Q. What is use of JS in Client ?
+Q. Using XHR how error handling work? 
+Q. Error handling ? 
+Q. What is coersion ?
+Q. What will be the output of console.log(1 + '2' + 3)
+Q. JS Overview 
+Q. console.log in JS ? 
+Q. Different type of operator in JS?
+Q. If I want to add one element from back, which method do I use ?
+Q. Ternary operator in JS ? 
+Q. break and constinue keyword ?
+Q. What is use of constructor function in JS ?  (2)
+Q. How do you access web storage ? 
+Q. How do you trim String in JS ?  (2)
+Q. In string, to return the character from a specific index which method is
+used?
+Q. What is decorator ?
+Q. const person = {
+  age: 20,
+  name: 'Ben'
+  };
+  const peopleArray = [person, person, person];
+  peopleArray[1].name = 'Joe';
+  console.log(peopleArray[0].name);"
+Q.  console.log(1);
+  setTimeout(()=>console.log(2), 1000);
+  setTimeout(()=>console.log(3), 2000);
+  a.then((val)=>console.log(val))
+  console.log(5);
+Q. What is Output of following program ? 
+  function test(){var i = 10;}
+  test()
+  console.log(i);
+Q. What is Output of following program ?
+  a) console.log("hello");
+     setTimeout(()=>{console.log("in");}, 2000);
+     console.log("out");
+  b) console.log(1);
+     setTimeout(()=>console.log(2), 1000);
+     setTimeout(()=>console.log(3), 1000);
+     console.log(4);
+  c) console.log(typeof (Object));
+Q. What is Output of following program ?
+ a) alert('2' > 1);
+    alert('01' == 1);
+    console.log("0 || 1 =" + (0 || 1));
+    console.log("1 || 2 =" + (1 || 2));
+    console.log("0 && 1 =" + (0 && 1));
+    console.log("1 && 2 =" + (1 && 2));
+ b) let a = "hello";
+    function greet(){
+      let b = "World"; 
+      console.log(a + b);
+    }
+    greet();
+    console.log(a + b);
+ c) var a = [1, 2, 3];
+    a[10] = 99;
+    console.log(a[6]) 
+ d) console.log(typeof typeof 1);
+    
 * Medium :-
-Q. What is javascript? (2)
 Q. Is javascript statically typed or dynamically typed?
 Q. Is JavaScript single-threaded? (2)
 Q. Is JavaScript single-threaded? If yes, how is it able to run asynchronous 
 code? 
 Q Do you know about the event loop in JS? 
 Q Can you tell the difference between let, var, and const? which one is better
-and why ? (6)
+and why ? (12)
 Q What happens if I don't initialize a const variable?
-Q Do you know what is function and block scope in JS?
-Q Do you know what is the temporal dead zone in JS? (2)
+Q Do you know what is function and block scope in JS? (2)
+Q Do you know what is the temporal dead zone in JS? (6)
 Q Can you call a JS function as soon as a page loads?
-Q What is the difference between setTimeout and setInterval?
-Q What are IIFE functions?  (2)
+Q What is the difference between setTimeout and setInterval? (2)
+Q What are IIFE functions?  (6)
 Q Provided an API, how to make a network call?
 Q Do you know about AJAX?
 Q Difference in the output? (2)
@@ -67,38 +155,42 @@ Create a simple copy object?
 Q What will the output be for the following?
   12 + 5 + "22" and 12 + "22" + 5? 
 Q. "1"+2+3 , 1+true+"1", 1 + +"2" + 3 and 1+2+"3" output of this.
-Q What is the difference between == and === operator in JS? (3)
+Q What is the difference between == and === operator in JS? (7)
 Follow up - 0 == false and 0===false
-Q Difference between the splice and slice methods in JS?
-Q. Difference between mutable and immutable objects. Any Example ? 
-Q. What is callback function ? (2)
-Q. What is temporal dead zone ?
-Q. What is Asynchronous and synchronous in JS? Any example (2)
-Q. What are a promises and how it work? (3)
+Q. Difference between mutable and immutable objects. Any Example ? (2)
+Q. What is callback function ? (7)
+Q. Callback and callback hell ? 
+Q. What is callstack?
+Q. What is Asynchronous and synchronous in JS? Any example (5)
 Q. What is difference between window and document?
 Q. Difference between BOM and DOM ?
-Q. What is difference between Attribute and Property ?
-Q. In Array what is main difference between slice and splice ?
+Q. In Array what is main difference between slice and splice ? (2)
 Q. Object.freeze() vs const ?
 Q. Object comparison - code for shallow quality and deep quality check ? 
+Q. What is deep copy ? 
 Q. Make a network call to the following URL
 https://jsonplaceholder.typicode.com/comments
 and fetch the results and store them in localStorage?
 Q. What is the difference between function declaration and expression?
-Q. Explain Hoisting in Javascript (6)
+Q. Explain Hoisting in Javascript (13)
 Q. What is ouput of below code:
 console.log(a)
 var a = 10
 console.log(b)
 let b = 20
-Q. What is prototype in JS ? 
-Q. Local storage Vs Session Storage ? 
+Q. What is prototype in JS ? (3)
+Q. Prototype and prototypal inheriteance ? 
+Q. What is Memoization ? 
+Q. Local storage Vs Session Storage ? (3)
+Q. What are higher order functions ? (2)
 
 * Hard :-
-Q. Currying function ?
-Q. Pure function ?
-Q. What is DOM. DOM manupulation ? (3)
-Q. ES6 concepts ? (2)
+Q. Currying function ? (3)
+Q. Pure function ? (2)
+Q. What is DOM. DOM manupulation ? (6)
+Q. Difference between BOM and DOM ? 
+Q. Difference between ES5 and ES6 ? 
+Q. ES6 concepts ? New features of ES6 (4)
 Q. Does JS has classes?
 Follow-up. Do you know about polyfills?
 Follow-up - Do you know about transpilation and Babel?
@@ -113,7 +205,8 @@ Q. What is RegEx in JS?
 Q. What are Imports and Exports ?
 Q. What is the purpose of debugger in JS?
 Q. What is the name of the method to check equality of two nodes? 
-Q. What are generator functions?  (4)
+Q. What are generator functions?  (5)
+Q. Wxplanin details about iterator and generator concepts ? 
 Q. JS is an event driven language. How? 
 Q. How do you access web storage?  
 Q. const person = {
@@ -138,18 +231,42 @@ var a = b = 3;
 })();
 console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
-Q. Write Debounce function ? 
+Q. What is Debouncing? Write Debounce function ?  (2)
+Q. What is API? 
+
 
 ** Bacis HTML and CSS questions :-
 * HTML
 1. What is HTML?
-2. What is DOM?
+2. What is DOM? and why it is used? (2)
 3. What is DOCTYPE and write DOCTYPE syntax for html5?
 4. What happens if I write html4 code with DOCTYPE html5
-5. What is a meta tag?
-6. What are semantic tags?
+5. What is a meta tag? why we use it ? (2)
+6. What are semantic tags? (2)
 7. What are entities in HTML?
 8. Explain encrypt attribute in the form tag?
+9. Difference between tag and element? 
+10. Difference between inline and block  (2)
+11. How to create a link to open in new tab in browser ?
+12. Why do we need specific doctype in beginning of html file?
+13. What are the new features in HTML5 ?
+14. How many ways we can add style to element ?
+15. Create html page with form and table, also write css
+16. What does HTML stands for? 
+17. What are tags and attribute in HTML ? 
+18. What are void elements in HTML ? 
+19. Different type of list in HTML ? (2)
+20. What is the ‘class’ attribute in HTML?
+21. What is the difference between the ‘id’ attribute and the ‘class’ 
+attribute of HTML elements?
+22. What is the difference between “display: none” and “visibility: hidden”,
+when used as attributes to the HTML element.
+23. Difference between div and span
+24. What is semantic HTML? (2)
+25. How to handle events in HTML?
+26. What is an image map? 
+27. What are empty elements?
+28. What is SVG? 
 
  * CSS
 1. What is CSS?
@@ -161,17 +278,35 @@ Q. Write Debounce function ?
 7. What is float property?
 8. Different types of positioning an element?
 9. What is z-index?
+10. What are advantages of using css ?
+11. Which css will take more preffernce ?
+12. What is box model in css? (2)
+13. What is posititon in css?
+14. How many css positions are there ?
+15. How to target child element in css selector ? 
+15. What is box-sizing?
+16. Difference between text align and align content ? 
 
 
 * Coding Questions of JavaScript :-
 Q. Write a program to print the sum of factorials of first n terms (Easy)
+Q. Write sum implementation for sum(1)(2)()
+Q. WAP to find target number in an array?
 Q. remove comma from an Array. (Easy)
-Q. reverse Array. (Easy)
-Q. .Check the no is palindrome or not. (Easy)
+Q. reverse Array. (Easy) 
+Q. reverse string. (Easy) 
+Q. .Check the no is palindrome or not. (Easy) (2)
 Q. Find 3rd largest element from an array. (Easy)
 Q. remove spaces of string in an Array. (Easy)
+Q. Create an 8*8 chessboard UI using html, css and js. Each box sizing 
+20px * 20px. Write a modular code so that it is easier to extend. Modular 
+means reusable and less repitition  (Medium)
+Q. Create Form validation with input fields as (firstName, lastName, city,
+submit button) on submit if something is missing it should give us alert
+message (Medium) (2)
+Q. shuffle array randomly let arr = [1, 2, 3, 4, 5] every click change order
 Q. remove duplicates of an Array. (Medium)
-Q. Remove all instance of element from the array ? (Medium)
+Q. Remove all instance of element from the array ? (Medium) (2)
 Q Find the factorial of a function for the number passed? (Medium)
 Q Write a function to print the Fibonacci series in JS? (Medium)
 Q. Print from 0 to 5 with 2s of Interval ?  (Medium)
@@ -179,8 +314,11 @@ Q. WAP in JS to create an arrow function 'concatenator' which can print
 'hello world' with given function call 
 i.e. console.log(concatenator('hello')('world'))   (Medium)
 Q. create counter application?  (Medium)
+Q. write code in js to find out prime no. form 1 to 50 by using recursion (Medium)
 Q. Create two buttons. One for to display current date and time and other 
 one for to change the  color of text?  (Medium)
+Q. Write code to get random number from 1,3,5,7,9,11 by using random function
+in js ? (Medium)
 Q. Write a code to print infinite series of natural numbers using simple 
 generator ?  (Medium)
 Q. WAP in JS to find out the sum i.e. 
@@ -188,12 +326,38 @@ Input1: const arr1 = ['Jan100','Feb200','March300','April','May400','June500']
 Output1 : 1500 
 Input2 : const arr2 = ['onlytext', 'onlytexttwo']
 Output2 : 0 (Hard)
+Q. Count the number of goats and hens in a group of animals when given total
+number of heads And legs ? (Hard)
+Q. Write a JS program ti count number of days passed since beginning of the 
+year ? (Hard) (2)
 Q. Write a JS program to calculate number of days left for next Diwali ? (Hard)
-Q. Create simple students list with add & delete functionality. (Hard)
+Q. Create simple students list with add & delete functionality. (Hard) (2)
 Q. Write a JS program to reverse each word in a given string without changing 
 the original position of a word (Hard)
 Q. Create an input field with button. When button is clicked, the text in input
 field should added below in a list. Moreover, whether any list item is clicked,
-it should be removed from from the list ? 
+it should be removed from from the list ? (Hard)
 Q. Backround changer project in which you will be changing color of the 
 background on click of button based on the user input ? (Challenge)
+Q. Given a String decompress it,   (Challenge)
+input -- 
+ a2b3c4def2
+output -- 
+aabbbccccdeff 
+Q. first non repeating element in an array. (Challenge)
+input -
+1 2 3 4 2 1 7 8
+output - 
+3  
+Q. sort this user list by age  (Challenge)
+var user_list= [ 
+  {USER:"bob", SCORE:2000, TIME:32, AGE:16, COUNTRY:"US"}, 
+  {USER:"jane", SCORE:4000, TIME:35, AGE:16, COUNTRY:"DE"}, 
+  {USER:"tim", SCORE:1000, TIME:30, AGE:17, COUNTRY:"UK"}, 
+  {USER:"mary", SCORE:1500, TIME:31, AGE:19, COUNTRY:"PL"}, 
+  {USER:"joe", SCORE:2500, TIME:33, AGE:18, COUNTRY:"US"}, 
+  {USER:"sally", SCORE:2000, TIME:30, AGE:16, COUNTRY:"CA"}, 
+  {USER:"yuri", SCORE:3000, TIME:34, AGE:19, COUNTRY:"RU"}, 
+  {USER:"anita", SCORE:2500, TIME:32, AGE:17, COUNTRY:"LV"}, 
+  {USER:"mark", SCORE:2000, TIME:30, AGE:18, COUNTRY:"DE"}, 
+  {USER:"amy", SCORE:1500, TIME:29, AGE:19, COUNTRY:"UK"} ];
