@@ -5,9 +5,10 @@ Q. What is Scripting language?
 Q. What is Run time?
 Q. what is closures in JavaScript and Explain. and its uses?  (10)
 Q. Create a layout Closure in JS ? 
-Q. What are bind, call and apply methods in JS? Explain the difference? (11)
+Q. What are call, apply and bind methods in JS? Explain the difference? (11)
 Q. Explain events. Event loop working? event bubbling and capturing (10)
 Q. Event propogation woring (bubbling and capturing) (4)
+Q. Explain event delegation ? 
 Q. Explain promises, async await (7)
 Q. Async await keyword ? (2)
 Q. What are a promises and how it work? why do we need promises (6)
@@ -198,7 +199,6 @@ Q. Does JS support Inheritance?
 Q. How can you apply inheritance in JS? 
 Q. How do you check whether a string contains a substring? 
 Q . What are the various ways to create objects in JS?
-Q. Explain event delegation ? 
 Q. Differences between View state and Session state
 Q. How can you handle exceptions in JS?
 Q. What is RegEx in JS? 
@@ -328,7 +328,7 @@ Input2 : const arr2 = ['onlytext', 'onlytexttwo']
 Output2 : 0 (Hard)
 Q. Count the number of goats and hens in a group of animals when given total
 number of heads And legs ? (Hard)
-Q. Write a JS program ti count number of days passed since beginning of the 
+Q. Write a JS program that count number of days passed since beginning of the 
 year ? (Hard) (2)
 Q. Write a JS program to calculate number of days left for next Diwali ? (Hard)
 Q. Create simple students list with add & delete functionality. (Hard) (2)
