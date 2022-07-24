@@ -43,6 +43,8 @@ const user3 = {
         console.log(this.firstName, this.age);
     }
 }
+user3.about();  //this will ne window object
+// Output : undefined undefined
 
 // Short hand to create method inside object
 const user4 = {
