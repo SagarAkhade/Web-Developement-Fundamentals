@@ -34,3 +34,25 @@ console.log(person1.fullName);
 person1.setFullName = ("mohit sharma");
 console.log(person1.fullName);
 // Output : mohit sharma
+
+// Static method and property ->>
+// using static method we can access directly from Person2 class 
+// using static property we can access directly from Person2 class 
+class Person2{
+    constructor(firstName, lastName, age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    // static method
+    static classInfo(){
+        return `the Person class`;
+    }
+    // static property
+    static desc = "static property"
+}
+const person4 = new Person2("sagar","akhade", 8);
+console.log(Person2.classInfo());
+// Output : the Person class
+console.log(Person2.desc);
+// Output : static property
