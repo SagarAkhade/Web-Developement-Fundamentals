@@ -1,7 +1,8 @@
 // Hoisting in JavaScript
 
 // Hoisting :-
-// calling a function before its declarazation is called Hoisting behaviour
+/ Before execution of code it first storing varibles and functions in global memory. 
+// It is called as Hoisting
 // Hoisting only works with function declaration and not with function Expression Or Arrow function
 
 hello();  // calling function before inititalization only done with function declaration
