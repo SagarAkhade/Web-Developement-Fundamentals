@@ -1,7 +1,7 @@
 // Hoisting in JavaScript
 
 // Hoisting :-
-/ Before execution of code it first storing varibles and functions in global memory. 
+// Before execution of code it first storing varibles and functions in global memory. 
 // It is called as Hoisting
 // Hoisting only works with function declaration and not with function Expression Or Arrow function
 
