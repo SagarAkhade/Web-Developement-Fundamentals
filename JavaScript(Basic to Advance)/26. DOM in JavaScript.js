@@ -12,7 +12,7 @@ console.dir(document);
 // Select elements of HTML page ->>
 // Select element using get element by id ->
 // - Select element using get element by id, we must need any element in HTML page with some id
-// document.getElementById is work only with id
+// document.getElementById("nameOfId") is work only with id
 console.log(document.getElementById("main-heading"));
 // Output : <h2 id="main-heading">Manage your tasks</h2>  ->> it is an object 
 console.log(typeof document.getElementById("main-heading"));
@@ -27,18 +27,18 @@ console.log(navItems[0]);  //same properties as array
 // Output : first elements with class nav-item printed
 
 // Select element using query selector ->
-// document.querySelector - works for selecting id as well as classes
+// document.querySelector(".classOr#IdName") - works for selecting id as well as classes
 // for selecting id use #
 // for selecting class use .
 // document.querySelectorAll - will select all classes/elements. And it gives node list 
-const mainHeading5 = document.querySelector("div.headline h2"); 
-// Output : it will give h2 inside the first div same as in css selector
+const mainHeading5 = document.querySelector("div.headline h2");
 console.log(mainHeading5);
+// Output : it will give h2 inside the first div same as in css selector
 const mainHeading1 = document.querySelector("#main-heading");  //selecting id
 console.log(mainHeading1);
 // Output : h2#main-heading  - it is object
-const header = document.querySelector(".header"); //selecting id
-console.log(header);  
+const header = document.querySelector(".header"); //selecting class
+console.log(header);
 // Output : print all inside header
 const navItem = document.querySelector(".nav-item");
 console.log(navItem);
@@ -53,15 +53,15 @@ const tag = document.getElementsByTagName("a");
 
 
 // Loops in DOM ->>
-// Loops are used to iterate over multiple classes and add some properties on it
-// simple for loop, for of loop, - for iterations
+// Loops are used to iterate over multiple classes or tags and add some properties on it
+// simple for loop, for of loop, forEach method- for iterations
 // we can't use forEach method to iterate through HTMLCollection
 // Array like object - has only indexing, length property
 // loops on HTMLCollection->
 const navItems2 = document.getElementsByTagName("a");  //it gives HTMLCollection
 console.log(navItems2.length);  // Output : 3
 // Changing the backgroundColor and color using loop
-for(let i=0; i<navItems2.length; i++){
+for (let i = 0; i < navItems2.length; i++) {
     const navItem = navItems2[i];
     navItem.style.backgroundColor = "#fff";
     navItem.style.color = "green";
@@ -73,7 +73,7 @@ for(let i=0; i<navItems2.length; i++){
 // Simple for loop, for of loop and also forEach loop works
 // Nodelist is given by .querySelectorAll("a")
 const navItems3 = document.querySelectorAll("a");
-navItems3.forEach((navItem)=>{
+navItems3.forEach((navItem) => {
     navItem.style.padding = "0.2rem";
 });
 // Output : padding is added all a tags
@@ -100,8 +100,10 @@ console.log(mainHeading3.innerText);
 // Change the style of element ->>
 // .style property gives all styles related to particular element 
 // .style is also used to change the styles of element
+// Syntax : mainHeading4.style.cssProperty = "value";
 // mainHeading4.style.color = "blue"; ->> will change the color
-// In JavaScript only camelCase used dash will gives error to change properties
+// In JavaScript only camelCase used (Ex: backroundColor), 
+// dash in css property will gives error (Ex: backgound-color)
 // Ex: mainHeading4.style.backgroundColor = "red"; right
 // mainHeading4.style.background-color = "red"; wrong
 const mainHeading4 = document.querySelector("div.headline h2");
@@ -113,9 +115,9 @@ mainHeading4.style.border = "2px solid green";
 mainHeading4.style.padding = "0.1rem"
 
 
-// get and set attribute in Dom ->>
-// .getAttribute("attribute_name")  - will give the attribute 
-// .setAttribute("attribute_name","changed_attribute_name")
+// getAttribute and setAttribute in Dom ->>
+// .getAttribute("attribute_name")  - will give the attribute value
+// .setAttribute("attribute_name","changed_attribute_name") - will change attribute value
 const link = document.querySelector("a");
 console.log(link.getAttribute("href"));
 // Output : #home
@@ -134,5 +136,5 @@ const headline = document.querySelector(".headline");
 // console.log(headline.innerHTML);
 // Output : Everything inside headline printed
 headline.innerHTML = "<h1>Inner HTML changed</h1>";
-headline.innerHTML += "<button class=\"btn\">Learn More</button>";
+headline.innerHTML += `<button class="btn">Learn More</button>`;
 // Evering inside headline changed with above text given by us
