@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style1.css">
+    <!-- Method of Linking JS File -->
+    <!-- 1. Linking JS file inside head tag -->
+    <!-- 2. Linking JS file before close of body tag -->
+    <!-- 3. Linking JS file inside head tag using async keyword -->
+    <!-- 4. Linking JS file inside head tag using defer keyword -->
+
+
+    <!-- Linking JS file inside head tag -->
+    <!-- This is wrong way to link js file with html file -->
+    <!-- Because html file first read all JS file before its actual execution -->
+    <!-- <script src="./26.js"></script> -->
+
+    <!-- Linking JS file inside head tag using async keyword -->
+    <!-- Using this async keyword html page parsing and loading js file will work simultaneously -->
+    <!-- When loading of js file completed but parsing of html page still remaining, it will stop parsing  -->
+    <!-- first work on completely execution of js file and then again does remaining parsing -->
+    <!-- In this method there are chances of error -->
+    <!-- So async method is also not good -->
+    <!-- <script src="./26.js" async></script> -->
+
+    <!-- Linking JS file inside head tag using defer keyword -->
+    <!-- Using this defer keyword html page parsing and loading js file will work simultaneously -->
+    <!-- When loading of js file completed but parsing of html page still remaining, browser will complete the parsing of html page first.  -->
+    <!-- And after both done i.e paring html page and loading js file simultaneously, then browser will work on execution of js file -->
+    <!-- This is best method of linking the JS file usig defer keyword -->
+    <!-- This Method will improve website performance -->
+    <script src="./26.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="">Todo</a></li>
+                <li class="nav-item"><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2 id="main-heading">Manage your tasks <span style="display:none;">Hello</span></h2>
+            <button class="btn btn-headline">Learn more</button>
+        </div>
+    </header>
+    <section class="section-todo container">
+        <h2>Your plan for today ?</h2>
+        <form class="form-todo">
+            <input type="text" name="" id="" placeholder="Add Todo">
+            <input type="submit" value="Add Todo" class="btn">
+        </form>
+    </section>
+
+    <section class="section-singup container">
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password"> Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Linking JS file before close of body tag -->
+    <!-- Using this time consumption is more so we are not using this way -->
+    <!-- <script src="./26.js"></script> -->
+</body>
+</html>
