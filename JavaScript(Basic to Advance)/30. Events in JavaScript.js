@@ -17,7 +17,7 @@
 // }
 // Output : you clicked me !! - When we click button it printed 
 
-// 3) addEventListener() method ->
+// 3) addEventListener() method ->>
 // .addEventListener("typeOfEventName", functionToGetExecuted)
 // - We mostly using this method
 // - click is event fired when we left click from mouse
@@ -30,6 +30,27 @@
 //     console.log("you clicked me !!!!");
 // });
 // Output : you clicked me !!!! - when we clicked button
+
+// Keypress and mouseover event->>
+// keypress event ->
+// "keypress" event - whenever user press any key from keyboard we get that key
+const body = document.body;
+body.addEventListener("keypress", (e)=>{
+    console.log(e.key);
+});
+// Output : Which key is press from keyboard we get that key in console
+
+// Mouseover and mouseleave event ->
+const mainButton = document.querySelector(".btn-headline");
+mainButton.addEventListener("mouseover", ()=>{
+    console.log("mouseover event occured!!!")
+});
+// Output : mouseover event occured!!! - whenever we move cursor over button
+mainButton.addEventListener("mouseleave", ()=>{
+    console.log("mouseleave event occured!!!")
+});
+// Output : mouseleave event occured!!! - whenever we move cursor out of button
+
 
 // this keyword using events ->>
 // In case of normal fuction value of this is element itsef -
