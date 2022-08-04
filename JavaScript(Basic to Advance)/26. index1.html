@@ -32,7 +32,13 @@
     <!-- And after both done i.e paring html page and loading js file simultaneously, then browser will work on execution of js file -->
     <!-- This is best method of linking the JS file usig defer keyword -->
     <!-- This Method will improve website performance -->
-    <script src="./26.js" defer></script>
+    <!-- <script src="./26.js" defer></script> -->
+    <!-- <script src="./28.js" defer></script> -->
+    <!-- <script src="./29.js" defer></script> -->
+    <!-- <script src="./30.js" defer></script> -->
+    <!-- <script src="./32.js" defer></script> -->
+    <!-- <script src="./33.js" defer></script> -->
+    <!-- <script src="./34.js" defer></script> -->
 </head>
 <body>
     <header class="header">
@@ -46,15 +52,37 @@
         </nav>
         <div class="headline">
             <h2 id="main-heading">Manage your tasks <span style="display:none;">Hello</span></h2>
+            <!-- This is one way of adding event -->
+            <!-- just write attribute inside html tag onlick = "js code" -->
+            <!-- but this way is not in use -->
+            <!-- <button class="btn btn-headline" onclick="console.log(`You clicked me`)">Learn more</button> -->
             <button class="btn btn-headline">Learn more</button>
         </div>
     </header>
-    <section class="section-todo container">
+    <section class="section-todo container abc">
         <h2>Your plan for today ?</h2>
+
+        <!-- Todo form  -->
         <form class="form-todo">
             <input type="text" name="" id="" placeholder="Add Todo">
             <input type="submit" value="Add Todo" class="btn">
         </form>
+
+        <ul class="todo-list">
+            <!-- <li class="first-todo">todo 1</li> -->
+            <!-- <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li> -->
+            <li>
+                <span class="text">Do this do that</span>
+                <div class="todo-buttons">
+                    <button class="todo-btn done">Done</button>
+                    <button class="todo-btn remove">Remove</button>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section class="section-singup container">
