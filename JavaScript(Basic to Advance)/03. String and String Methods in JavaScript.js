@@ -15,7 +15,7 @@ console.log(firstName[2]);
 console.log(firstName.length);
 // Output : 5
 
-// Last Index of String ->> stringName - 1
+// Last Index of String ->> stringName.length - 1
 console.log(firstName[firstName.length - 1]);
 // Output : r
 
