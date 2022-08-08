@@ -1,5 +1,6 @@
 // Data types and typeof operator in JavaScript 
-// typeof operator in JavaScript 
+
+// typeof operator in JavaScript ->
 // typeof operator tells us about the type of data type
 // Data types (primitive data types) :-
 // String
@@ -30,7 +31,7 @@ console.log(typeof +myStr);
 // Output : number
 
 // Another way of conversion 
-// Covert number to String
+// Convert number to String
 let a = 18;
 a = String(a);
 console.log(typeof a);
@@ -43,7 +44,7 @@ console.log(typeof b);
 
 // undefined :-
 // the variable which are not asign with value will give undefined 
-// in case of const we must define its value
+// in case of const we must define its value during initialization
 let firstName2;
 console.log(typeof firstName2);
 // Output : undefined
