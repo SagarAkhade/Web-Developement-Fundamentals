@@ -42,8 +42,9 @@ for(let i = 0; i <= 3; i++){
 let fibonacciNumber = 0;
 let numberOfTerms = 6;
 let f1 = 0, f2 = 1;
-console.log("fibonacciNumber");
-for(let i = 2; i <= numberOfTerms; i++){
+console.log(`${f1}`);
+console.log(`${f2}`);
+for(let i = 1; i < numberOfTerms; i++){
     fibonacciNumber = f1 + f2;
     console.log(fibonacciNumber);
     f1 = f2;
