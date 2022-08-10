@@ -1,6 +1,6 @@
 // lexical Scope in JavaScript 
 
-// When we calling any value of from function inside function
+// When we calling any value from function inside function
 // but that value is not present in that inside function
 // then it try to access ouside it but inside of main function
 // And if value is also not present in main function then
