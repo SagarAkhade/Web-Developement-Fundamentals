@@ -20,7 +20,7 @@ myFunc(myFunc2); // ->> Callback function
 // Function returning function :-
 // Here the function is returning another function
 // Higher order Functions : functions which take function
-// as parameter or returns function returns function are called HOF
+// as parameter or returns function are called HOF
 function myFunc3(){
     function hello(){
         return "hello world";
