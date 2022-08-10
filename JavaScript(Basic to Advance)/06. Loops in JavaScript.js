@@ -60,7 +60,7 @@ for(let i = 1; i <= 10; i++) {
     }
     console.log(i);
 }
-// output : 0 1 2 3 4 ->> generated on next line
+// output : 1 2 3 ->> generated on next line
 
 // continue keyword :-
 // after using continue keyword it will bring back to loop and doesnot execute statements below it
@@ -70,4 +70,4 @@ for(let i = 1; i <= 5; i++) {
     }
     console.log(i);
 }
-// output : 0 1 2 3 5 ->> generated on next line
+// output : 1 2 3 5 ->> generated on next line
