@@ -53,7 +53,7 @@ console.log(result);    // Output : 15
 
 // Parameter destrucutring :-
 // used with objects and mostly in react
-// In parameter destructuring we pass values of object as paramter of function
+// In parameter destructuring we pass keys of object as paramter of function
 // using destructuring 
 const person = {
     firstName : "Sagar",
