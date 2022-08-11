@@ -117,7 +117,7 @@ mainHeading4.style.padding = "0.1rem"
 
 // getAttribute and setAttribute in Dom ->>
 // .getAttribute("attribute_name")  - will give the attribute value
-// .setAttribute("attribute_name","changed_attribute_name") - will change attribute value
+// .setAttribute("attribute_name","changed_attribute_value") - will change attribute value
 const link = document.querySelector("a");
 console.log(link.getAttribute("href"));
 // Output : #home
