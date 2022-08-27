@@ -1,0 +1,152 @@
+Q. Var vs let vs const and the scopes of these variables?
+Ans - Var - var is used to declare the variables
+          - During hoisting var is initialized with undefined variable
+          - var has global/functional scope, i.e one declared can be used in all prgram
+    - let - let is used for declaring variables.
+          - During hoisting let is initiailized as undeclared variable
+          - let has block scope, ie. it is used only in that block where is declared
+  - const - const is used for declaring varaibles, but once it initialized cannot change it value further.
+          - During hoisting const is initiailized as undeclared variable.
+          - const has block scope, ie. it is used only in that block where is declared
+    
+Q. Execution of JS code ?
+Ans - As JS is single threaded synchronous language it code execution starts from top to bottom
+    - first all varible and functions gets hoiseted in Global excution context.
+    - And then it start executing the code from top to bottom
+    - We can change synchronous behaviour to asynchronous by using some methods like setTimeout,
+      setIntervals, etc.
+     
+Q. Programming question based on string and array methods.
+
+Q. Explicit binding of this using call, bind and apply.
+Ans - These are used to borrow method from object
+    - call() method :
+        - call() method has first parameter as value for this and other normal prameters 
+        - Syntax : about.call(valueForThisKeyword, anyNumberOfParameters);
+    - apply() method :
+         - apply() method has first parameter as value for this and other normal prameters 
+            passed in form of array
+         - Syntax :  about.apply(valueForThisKeyword, ["extraArguments"]);
+    - bind() method :-
+        - similar to call method
+        - bind method will return function
+     - Implementaion :---
+        function about(hobby, favMusician){
+            console.log(this.firstName, this.age, hobby, favMusician);
+        }
+        const user1 = {
+            firstName : "sagar",
+            age : 8
+        }
+        about.call(user1,"guitar","moazrt");
+        // Output : sagar 8 guitar moazrt
+        about.apply(user1, ["guitar","bach"]);
+        // Output : sagar 8 guitar bach
+        const func = about.bind(user1, "guitar", "bach");
+        func();
+        // Output : sagar 8 guitar bach
+        
+Q. Closures and example?
+Ans - When we are returning function which is inside another function then that inside 
+      function will return with variables which are in local memory of outside function
+      This is called as closure.
+    - Implementation :
+         function hello(x){
+            const a = "varA";
+            const b = "varB";
+            return function(){
+                console.log(a, b, x);
+            }
+          }
+          const ans1 = hello("arg");
+          ans1(); // Output : varA varB arg
+      
+Q. Event phases in JS?       
+Ans - There are three different phases in JavaScript event.
+       - Capturing Phase - when event goes down to the element.
+       - Target Phase - when event reach the element.
+       - Bubbling Phase - when the event bubbles up from the element.
+       
+Q. Currying in JS?
+Ans - Currying means evaluating functions with multiple arguments and 
+      use them into a sequence of functions with a single argument.
+     - Implementations :- 
+          Curried version//
+          const addCurry =(a) => {
+              return (b)=>{
+                  return (c)=>{
+                      return a+b+c
+                  }
+              }
+          }
+          console.log(addCurry(2)(3)(5)) // 10
+        
+Q. Types of few common values in JS.
+Ans - There two types of value in JS
+        - Primitive values - Number, BigInt, String, Boolean, Null, Undefined, Symbol
+        - Objects - collection of property
+      
+Q. General methods associated with Objects in JS?
+Ans - Objects are basically key-value pairs
+    - There are many different methods in Objects
+      - Object.create()  - used to create a new object and 
+                          link it to the prototype of an existing object
+      - Object.keys()    - creates an array containing the keys of an object.
+      - Object.values()  - creates an array containing the values of an object.
+      - Object.entries() - creates a nested array of the key/value pairs of an object.
+      - Object.assign()  - used to copy values from one object to another.
+      - Object.freeze()  - prevents modification to properties and values of an object
+      
+Q. what is the output of the following:
+      function abc(){
+          setTimeout(function (){
+              console.log(typeof(String))
+          },0)
+          console.log(i);
+
+          for(var i=1;i<=5;i++)
+          {
+              function xyz(abc)
+              {
+                  setTimeout(function(){
+                      console.log(abc)
+
+                  },abc*1000)
+              }
+              xyz(i)
+          }
+          console.log(i)
+      }
+      abc()
+      Output :- 
+      undefined
+      6
+      function
+      1
+      2
+      3
+      4
+      5
+      
+      
+Q. what is the output of:
+      var Employee ={
+          company:'xyz'
+      }
+      var emp1 = Object.create(Employee)
+      delete emp1.company
+      console.log(emp1.company)
+      //Output : -
+      xyz
+   * delete operator - 
+      - delete operator removes the property from the object 
+      - But here we are creating new object whose prototype has property company so it not 
+        get deleted.
+   
+      
+      
+      
+      
+      
+      
+      
