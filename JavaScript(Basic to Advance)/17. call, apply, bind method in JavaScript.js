@@ -3,7 +3,7 @@
 // call() method :-
 // call method is used to borrow method from object
 // call method will check value for this keyword,and for parameters if any
-// user1.about.call(valueForThisKeyword, anyNumberOfParameters);
+// about.call(valueForThisKeyword, anyNumberOfParameters);
 function about(hobby, favMusician){
     console.log(this.firstName, this.age, hobby, favMusician);
 }
