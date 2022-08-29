@@ -38,17 +38,20 @@ for(let i = 0; i <= 3; i++){
     console.log(i);
 }
 // output : 0 1 2 3 ->> generated on next line
+//Q. Printing Fibonacci series upto given number of terms
 // Ex. fibonacci series 0 1 1 2 3 5 8......
-let fibonacciNumber = 0;
-let numberOfTerms = 6;
-let f1 = 0, f2 = 1;
-console.log(`${f1}`);
-console.log(`${f2}`);
-for(let i = 1; i < numberOfTerms; i++){
-    fibonacciNumber = f1 + f2;
-    console.log(fibonacciNumber);
-    f1 = f2;
-    f2 = fibonacciNumber;
+function fib(n) {
+    if(n == 0){
+        return 0;
+    }
+    if(n == 1 || n == 2){
+        return 1;
+    } 
+    return fib(n - 1) + fib(n - 2);
+}
+let numberOfTerms = 7;
+for(let i = 0; i < numberOfTerms; i++){
+    console.log(fib(i));
 }
 // output : 0 1 1 2 3 5 8 ->> on nextline 
 
