@@ -23,7 +23,7 @@ console.log(firstName);
 "use strict"; // ->> use for developer to avoid mistakes
 
 // let keyword ->> 
-// Mostly let keyword(launched in ES5) is used for declaring varibles
+// Mostly let keyword is used for declaring varibles(launched in ES6(2015))
 // Difference between var and let
 // var can be initialize multiple times with same variable name 
 //But in case of let, we cannot initialize with same variable name muliple times. It will gives error
