@@ -1,9 +1,12 @@
 // Q. reverse string
-let string = "ab cd"
+// let str = "Geeks for Geeks"
+// Output: "skeeG rof skeeG"
+
+let string = "Geeks for Geeks"
  
 function reverseString(str) {
     return str.split("").reverse().join("");
 }
 console.log(reverseString(string));
 
-//Output : dc ba
+//Output : "skeeG rof skeeG"
