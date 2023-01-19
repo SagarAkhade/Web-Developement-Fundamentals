@@ -1,6 +1,6 @@
 ** Theory Questions on JavaScript :- 
 * Easy :-
-Q. What is javascript? How js works? (6)
+Q. What is javascript? How js works? (6) 
 Q. What is Scripting language?
 Q. What is Run time?
 Q. what is closures in JavaScript and Explain. and its uses?  (10)
