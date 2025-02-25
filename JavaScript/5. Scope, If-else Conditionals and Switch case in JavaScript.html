@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- This prograam is for Scope, If-else Conditionals and Switch case in JavaScript -->
+<!-- This program is for Scope, If-else Conditionals and Switch case in JavaScript -->
 <html lang="en">
 
 <head>
@@ -23,30 +23,36 @@
             <li>Item-7</li>
         </ul>
     </div>
+
     <script>
         //Below declared are Global variables and can be access in any function
         var string1 = "This is a string";
         var string1 = "This is a string2";
         console.log(string1);
+        // Output : This is a string2
+
         // let a = "u"; -> 'let' is another data type same as 'var' but we use it most
         let a = "u";
         console.log(a);
+        // Output : u
 
-        //here we have created blog an it can also be Function blog 
+        //here we have created blog and it is also be Function blog 
         {
             let a = "u6";
             console.log(a);
+            // Output : u6
         }
         console.log(a);
+        // Output : u
 
         //const -> is data type. Once it is declared cannot be changed after 
         const b = "This cannot be Changed";
         //b = "Why I want to change. This cannot be Changed";
         console.log(b);
-        //console O/p : Error if we over write b
+        // Output : Error if we over write b
 
-        //Conditionals 
-        //If-else-if ladder statements :
+        // Conditionals 
+        // If-else-if ladder statements :
         let age = 4;
         if (age > 18) {
             console.log("You can drink water");
@@ -60,7 +66,7 @@
         else {
             console.log("You can drink Cold Drink");
         }
-        //console O/p : You can drink Cold Drink
+        // Output : You can drink Cold Drink
 
         //Switch Statement 
         const cups = 44;
@@ -81,7 +87,7 @@
                 console.log("The value of cups is none of 4, 41, 42, 43");
                 break;
         }
-        //console O/p : The value of cups is none of 4, 41, 42, 43
+        // console O/p : The value of cups is none of 4, 41, 42, 43
     </script>
 </body>
 
