@@ -28,6 +28,7 @@ console.log(firstName);
 // var can be initialize multiple times with same variable name 
 //But in case of let, we cannot initialize with same variable name muliple times. It will gives error
 // Main difference is block scope vs function scope
+// var is function scope and let is block scope
 let name1 = "Sagar";
 console.log(name1);
 // Output : Sagar
