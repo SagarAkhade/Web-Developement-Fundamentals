@@ -196,7 +196,7 @@ console.log(isAbove1L);   // Output : true
 // fill method is used to fill many values from user
 // fill method also used to change values in current array
 // fill method modifies the original array
-// fill(valueToAdd, startIndex, endIndex) ->> will change initial values in given array
+// fill(valueToAdd, startIndex, endIndex - 1) ->> will change initial values in given array
 // by valueToAdd starting from startIndex given and end at endIndex - 1
 const myArray1 = new Array(10).fill(0);
 console.log(myArray1);
