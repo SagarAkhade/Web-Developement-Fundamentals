@@ -5,7 +5,8 @@
 // When we create a function it gives us freespace 
 // that freespace is called prototype
 // Prototype is empty object only provided with functions
-// Only functions provide prototype property
+// Only declarative and expression functions provide prototype property
+// Arrow functions don't provide prototype property
 // Prototype and proto are completely different things
 function hello(){
     console.log("hello world");
