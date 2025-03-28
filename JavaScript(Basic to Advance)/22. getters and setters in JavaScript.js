@@ -5,8 +5,9 @@
 // using getters we can access methods inside class as property 
 // Syntax : just add get before method name
 // setters :-
-// setters method just change the initital values to new given values
+// setters method just change the initital values of that class to new given values
 // Syntax : just add set before method name
+// For the Setter method we can add only one parameter
 class Person{
     constructor(firstName, lastName, age){
         this.firstName = firstName;
