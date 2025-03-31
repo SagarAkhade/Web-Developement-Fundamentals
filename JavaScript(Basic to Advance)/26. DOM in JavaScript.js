@@ -84,7 +84,7 @@ navItems3.forEach((navItem) => {
 // mainHeading2.textContent - gives the text of page
 // textContent property - used to change the content on webpage
 // textContent property will show all content which is in HTML page
-// innerText property will only show the content wich is on webpage. 
+// innerText property will only show the content which is visible on webpage. 
 // This is main difference between textContent and innerText
 const mainHeading2 = document.getElementById("main-heading");
 console.log(mainHeading2.textContent);
