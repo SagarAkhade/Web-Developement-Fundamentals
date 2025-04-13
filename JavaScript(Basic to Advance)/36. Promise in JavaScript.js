@@ -15,6 +15,8 @@
 // - promiseName.then(onResolveCallback).catch(onRejectCallback) 
 // - then method is used when promise is resolve .then(callbackFunction)
 // - catch method if promise is rejected then it goes to catch method .catch(callbackFunction)
+// - Promises are placeholder objects for data that's available in the future.
+
 const bucket = ["coffee", "chips", "vegetables", "salt", "rice"];
 // we are created promise here 
 const friedRicePromise = new Promise((resolve, reject) => {
