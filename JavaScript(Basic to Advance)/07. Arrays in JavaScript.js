@@ -64,6 +64,9 @@ console.log("First removed fruit is :", removedFruit);
 
 // Primitive vs reference data type :-
 // primitive type ->>
+// - Primitive data types are the immutable in JavaScript
+// - When we assign a primitive value to a variable, it directly holds the value
+// - Primitive types: string, number, bigint, boolean, undefined, null, symbol.
 let num1 = 6;
 let num2 = num1;
 console.log("value of num1 is", num1);  
@@ -72,8 +75,10 @@ console.log("value of num2 is", num2);
 // Output : value of num2 is 6
 
 // reference type ->>
-// Arrays are refernce type
-// here we passing refernce of element so it will reflect changes in all 
+// - Arrays are refernce type
+// - here we passing refernce of element so it will reflect changes in all 
+// - Reference data types are the mutable in JavaScript
+// - Reference types: object, array, function.
 let array1 = ["item1", "item2"];
 let array2 = array1;
 console.log("array1", array1);
