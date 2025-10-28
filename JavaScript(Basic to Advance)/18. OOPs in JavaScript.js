@@ -71,6 +71,8 @@ console.log(obj2.__proto__);  // this also called dunder
 // Output : {key1: 'value1', key2: 'value2'}
 // this proto can be written as :-
 // __proto__ or [[prototype]] ->> both are same
+// Here [[prototype]] will not worked instead use Object.getPrototypeOf(obj2) for getting proto 
+// Object.getPrototypeOf(obj2) ->> used to get proto of object
 // application of proto :-
 const userMethods1 = {
     about : function(){
