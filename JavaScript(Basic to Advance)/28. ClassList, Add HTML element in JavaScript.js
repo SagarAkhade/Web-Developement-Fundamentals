@@ -96,6 +96,11 @@ todo2.after(newTodoItem3);
 // - This is another method to create and add an element in webpage but not much in use
 // This method has follwing attributeds as beforebegin, afterbegin, beforeend, afterend
 // Syntax - .insertAdjacentHTML("whereToAdd", "whtaHTMLToAddOnWebpage");
+// whereToAdd - can be beforebegin, afterbegin, beforeend, afterend
+// todoList.insertAdjacentHTML('beforebegin', '<li>beforebegin -> before</li>');
+// todoList.insertAdjacentHTML('afterbegin', '<li>afterbegin -> prepend</li>');
+// todoList.insertAdjacentHTML('beforeend', '<li>beforeend -> append</li>');
+// todoList.insertAdjacentHTML('afterend', '<li>afterend -> after</li>');
 // This is not mostly used 
 // beforeend :- add to last of element(same as append)
 const todoList3 = document.querySelector(".todo-list");
