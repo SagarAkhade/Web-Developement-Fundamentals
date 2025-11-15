@@ -109,10 +109,10 @@ todoList3.insertAdjacentHTML("beforeend", "<li>beforeend Added using insertAdjec
 // afterbeging :- add to start of element(same as prepend)
 todoList3.insertAdjacentHTML("afterbegin", "<li>afterbegin Added using insertAdjecntHTML</li>");
 // Output : It will add to start of element 
-// beforebegin :- It will add the element completely before that element 
+// beforebegin :- It will add the element completely before that element (same as before)
 todoList3.insertAdjacentHTML("beforebegin", "<li>beforebegin Added using insertAdjecntHTML</li>");
 // Output : add that element completely before the element 
-// afterend :- It will add the element completely after that element 
+// afterend :- It will add the element completely after that element (same as after)
 todoList3.insertAdjacentHTML("afterend", "<li>afterend Added using insertAdjecntHTML</li>");
 // Output : add that element completely after the element 
 
