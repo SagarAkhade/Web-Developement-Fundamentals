@@ -51,8 +51,8 @@
 // - setInterval is same as setTimeout but it continously executes after the give time interval
 // Syntax - 
 // setInterval(callbackFunction, timeInMilliSeconds)
-// cleatInterval ->
-// Syntax - cleatInterval(idOfsetInterval)
+// clearInterval ->
+// Syntax - clearInterval(idOfsetInterval)
 // clearInterval is used to cancel the setInterval 
 // console.log("script start");
 // setInterval(()=>{
