@@ -1,7 +1,19 @@
 ** Theory Questions on JavaScript :- 
 * Easy :-
-Q. What is javascript? How js works? (6)
-Q. What is Scripting language?
+---------------------------------------------------
+Q 1. What is javascript? How js works? (6)
+Ans - JavaScript is fundamentally single threaded synchronous object oriented programming language primarily used to create dynamic and interactive web content.
+    - It enables websites to respond to user actions, manipulate the Document Object Model (DOM).
+    - JavaScript handle asynchronous operations like fetching data without page reloads.
+    - Working of JS : 
+        - Browsers parse JavaScript code into bytecode using an engine like V8 or SpiderMonkey, 
+        - Then execute it via a call stack(FIFO) that manages function calls one at a time.
+        - An event loop handles asynchronous tasks by processing a message queue, preventing blocking during operations like API calls.
+---------------------------------------------------
+Q 2. What is Scripting language?
+Ans - A scripting language is a type of programming language designed for automating tasks and rapid development.
+    - It is typically executed line-by-line by an interpreter at runtime without prior compilation into machine code.
+---------------------------------------------------
 Q. What is Run time?
 Q. what is closures in JavaScript and Explain. and its uses?  (10)
 Q. Create a layout Closure in JS ? 
